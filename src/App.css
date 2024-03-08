@@ -1,0 +1,189 @@
+.App{  
+  font-family: "Poppins";
+  color:#000;
+  
+}
+
+.androidBg-content img{
+  /* background-color: #001019; */
+  width:100%;
+  margin:-10% 0 0 0;
+  height: 100vh;
+  object-fit: cover;
+  
+}
+
+.androidBg-inner-content h1{
+  font-size: 70px;
+  font-weight: bold;
+  color:white;
+}
+
+.text{
+  text-align:justify;
+}
+
+.text p{
+  text-align:justify;
+}
+
+.contentBg{
+  background-color: #001019;
+  color: white;
+
+}
+
+.content-header{
+  font-size: 3.5rem;
+
+}
+
+.hoverlay-container{
+  position: relative;
+  background-color: #fafafa;
+}
+
+
+.hover-image{
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+/* .front-text{
+  display: block;
+  width: 100%;
+  height:auto;
+  margin: 20% 0 0 5%;
+  text-align: center;
+  font-weight: bolder;
+  
+} */
+
+.hoverlay{
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgb(255,255,255);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+     
+}
+
+.hoverlay2{
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgb(255,255,255);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+     
+}
+
+.hoverlay h4{
+  color:#FFC107;
+}
+
+.hoverlay2 h4{
+  color:#FFC107;
+}
+
+.hoverlay-container:hover .hoverlay{
+  height: 100%;
+  border-bottom: 5px solid #FFC107;
+}
+
+.hoverlay-container:hover .hoverlay2{
+  height: 100%;
+  border-bottom: 5px solid #FFC107;
+  box-shadow: 5px 5px 8px #ddd;
+}
+
+
+.modal-90w{
+  width:100%
+}
+
+.gray-bg{
+  background-color: #fafafa;
+  transition: .5s;
+}
+
+.gray-bg:hover{
+  border-bottom: 5px solid #FFC107;
+  box-shadow: 4px 5px 8px #ddd;
+}
+
+.hover-img:hover{
+    padding:1%;
+    transition: 1s;
+    
+}
+.dev-hover:hover{
+  border-bottom: 5px solid #FFC107 !important;
+  cursor:pointer;
+}
+
+
+/* Media Query */
+@media screen and (max-width:768px){
+
+  .androidBg-content img{
+      height: 80vh;
+      
+  }
+  
+  .androidBg-inner-content h1{
+      font-size: 35px;
+      
+  }
+
+  .content-header{
+      font-size: 1.5rem;
+      text-align: center;
+    
+  }
+
+  .hoverlay{
+      position: absolute;
+      bottom:0;
+      left:0;
+      right:0;
+      height: 100%;
+  }
+
+  .hoverlay2{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height: 100%;
+}
+
+  .hoverlay h4{
+      color:#FFC107;
+  }
+
+  .request{
+      margin-left: 7%;
+      /* margin:auto; */
+      
+  }
+
+  .justify-text{
+    text-align:justify;
+}
+
+
+}
+
+
+
+/* 001019 - For Bg Gradient*/

@@ -1,0 +1,53 @@
+.imgStyle{
+    height: 200px;
+    width: 200px;
+    margin:auto;
+}
+
+.cardContainer {
+    height: 250px;
+    width: 250px;
+    opacity:0.6;  
+
+}
+
+.cardContainer:hover {
+    opacity:1;  
+    box-shadow: 3px 5px 8px #ddd;
+  
+}
+
+.slick-slide div{
+    margin:0 10px;
+}
+
+.slick-prev:before {
+    color: black !important;
+    font-size: 30px !important;
+  }
+.slick-next:before {
+    color: black !important;
+    font-size: 30px !important;
+    
+  }
+
+  .opacity-effect{
+    opacity:0.3;
+  }
+
+  .opacity-effect:hover{
+    opacity:1;
+  }
+
+
+
+
+  /* Media Query */
+@media screen and (max-width:768px){
+     .cardContainer {    
+      height: 0px;
+      width: 0px;
+    }
+
+
+}

@@ -1,0 +1,163 @@
+.videoBg video {
+    width:100%;
+    margin:-10% 0 0 0;
+    min-height:100vh;
+    object-fit: cover;
+    padding:0;    
+    
+}
+
+.home-body{
+    background-color: #001019;
+}
+
+
+
+.hide-pic{
+    display: none;
+}
+.bg-content{
+    position:absolute;
+    height: 100%;
+    top:0;
+    display:flex; 
+    align-items: center;
+    justify-content: flex-start;
+    color:#fff;
+}
+
+.bg-inner-content{
+    flex:50%;
+    
+}
+
+.bg-inner-content h1{
+    font-size: 6vw;
+    font-weight:900;
+    padding:10%;
+}
+
+.bg-button {
+    padding:0.5vw;
+    margin-left:4vw;
+    /* font-size:.1.5vw; */
+    
+}
+
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    /* background: rgba(0,0,0,.4); */
+    background: #000000aa;
+}
+
+.services-header{
+    font-size: 3.5rem;
+    font-weight: bold;
+    
+}
+.consultation-header {
+    font-size:3.5rem;
+
+}
+
+.btn.btn-warning{
+    border-radius: 0 !important;
+}
+
+.btn.btn-secondary{
+    border-radius: 0 !important;
+}
+
+.services p{
+    text-align: justify;
+}
+
+.industries-text{
+    text-align: justify;
+}
+
+/* Styling the active button */
+.styleActive{
+    background-color: #ffc107 !important;
+    border: none !important;
+}
+
+
+.div-hover:hover{
+    background-color: #ffc107 !important;
+    color: gray !important;
+    border: none !important;
+}
+
+.yellowBg:hover{
+    background-color: #ffc107 !important;
+    color: #4d4b4b !important;
+    border: none !important;
+}
+
+.cloudknod-image img{
+    height: 200px;
+    width: 200px;
+         
+    }
+    
+
+
+/* Media Query */
+@media screen and (max-width:768px){
+    .videoBg video {
+        height:85vh;
+   
+    }
+
+    .cloudknod-image img.img-fluid{
+        margin:-20px 60px 60px 60px;
+    }
+
+    .bg-inner-content h1{
+        font-size: 10vw;
+    }
+
+    .services-header {
+        font-size: 1.5rem;
+
+    }
+    .development-header{
+        text-align: center;
+    
+    }
+
+    .show-btns .btn{
+        margin-bottom: 10px;
+
+    }
+    .cloudknod-image img{
+        /* margin:-30% 30% 0 0; */
+        /* margin:auto; */
+        
+        
+    
+    }
+    .services{
+        text-align: center;
+    }
+
+    .make-small{
+        font-size:17px !important;
+        text-align: justify !important;
+    }
+
+    .request{
+        margin-left:10%;
+    }
+
+    
+
+    
+}
