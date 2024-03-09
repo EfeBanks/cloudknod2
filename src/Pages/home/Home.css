@@ -103,22 +103,21 @@
 
 .cloudknod-image img{
     height: 200px;
-    width: 200px;
-         
+    width: 200px;     
     }
     
 
 
 /* Media Query */
-@media screen and (max-width:768px){
+@media screen and (max-width:700px){
     .videoBg video {
-        height:85vh;
+        height:70vh;
    
     }
 
-    .cloudknod-image img.img-fluid{
+    /* .cloudknod-image img.img-fluid{
         margin:-20px 60px 60px 60px;
-    }
+    } */
 
     .bg-inner-content h1{
         font-size: 10vw;
@@ -139,9 +138,9 @@
     }
     .cloudknod-image img{
         /* margin:-30% 30% 0 0; */
-        /* margin:auto; */
-        
-        
+        margin:auto;
+        padding-bottom: 14%;
+            
     
     }
     .services{

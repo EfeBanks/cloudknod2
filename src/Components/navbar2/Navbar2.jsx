@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Navbar2.css';
 import {Link} from 'react-router-dom';
 import { IoIosArrowDown } from "react-icons/io";
@@ -18,6 +18,38 @@ export default function NavigationBar2() {
     }
   
     window.addEventListener('scroll', changeColor)
+
+    // Making the Navlinks close Navbar on click
+    // useEffect(() => {
+    //     let size = window.innerWidth;
+    //     let navLinks = document.querySelectorAll(".nav-link");
+    // const updateWindowDimensions = () => {
+    //     size = window.innerWidth;
+    //   };
+    //   window.addEventListener("resize", () => {
+    //     updateWindowDimensions();
+    //     if (size > 992) {
+    //       navLinks.forEach((link) => {
+    //         link.removeAttribute("data-bs-toggle");
+    //         link.removeAttribute("data-bs-target");
+    //       });
+    //       console.log("removed attributes");
+    //     } else {
+    //       navLinks.forEach((link) => {
+    //         link.setAttribute("data-bs-toggle", "collapse");
+    //         link.setAttribute("data-bs-target", "#navbarToggler");
+    //       });
+    //       console.log("set attributes");
+    //     }
+    //   });
+    // }, []);
+
+    // const handleClick = (e) => {
+    // e.preventDefault();
+    // router.push(e.target.href);
+    // };
+
+
   return (
     <nav>
         <div className={color ?'custom-navbar':'navbar'}>

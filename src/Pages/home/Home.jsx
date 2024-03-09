@@ -77,7 +77,7 @@ function Home() {
     {/* At CloudKnod... */}
       <div className="containerSpecial consultationBg">
         <div className="row align-items-center mx-5">
-            <div className="col-sm-8 m-4 p-2 ps-0 text-justify "  >
+            <div className="col-sm-8 m-4 mt-0 p-2 ps-0 "  >
               <p className='border-end p-sm-4 at-cloudknod'>At CloudKnod, we understand that every business is unique, and so are their software requirements. Our custom software development services are designed to create tailored solutions that address your specific needs. Whether you need a web application, mobile app, desktop software, or any other software solution, our team is ready to bring your vision to life.</p>
             </div>
             <div className="col-sm-3 cloudknod-image">
@@ -96,7 +96,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="row mt-5 mx-5">
+          <div className="row mt-5 mx-sm-5 mx-2">
               <div className="col-sm-2">
               <img src={App} alt="cloudknod" className='img-fluid'/>
               </div>
@@ -113,7 +113,7 @@ function Home() {
               </div>
           </div>
 
-          <div className="row mx-5">
+          <div className="row mx-sm-5 mx-2">
               <div className="col-sm-2">
               <img src={Cloud} alt="cloudknod" className='img-fluid'/>
               </div>
@@ -130,7 +130,7 @@ function Home() {
               </div>
           </div>
 
-          <div className="row mb-5 mx-5">
+          <div className="row mb-5 mx-sm-5 mx-2">
               <div className="col-sm-2">
               <img src={Ui} alt="cloudknod" className='img-fluid'/>
               </div>
@@ -172,7 +172,7 @@ function Home() {
             </div>
           </div>
          
-         <div className="row my-5 mx-5">
+         <div className="row my-5 mx-sm-5 mx-2">
             <div className="col-sm-6 mb-3 mb-sm-0">
               <div className="card shadow">
                 <img src={Finance} className="card-img-top img-fluid " alt="..." style={{width:'100%'}} />
@@ -195,7 +195,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="row my-5 mx-5 pb-5">
+          <div className="row my-5 mx-sm-5 mx-2 pb-5">
             <div className="col-sm-6 mb-3 mb-sm-0">
               <div className="card shadow">
                 <img src={Media} className="card-img-top img-fluid" alt="..."  style={{width:'100%'}} />
@@ -239,14 +239,14 @@ function Home() {
 
          {/* Set of Technologies */}
          <div className="containerSpecial consultationBg pt-5">
-          <div className="row mt-5 mx-5">
+          <div className="row mt-5 mx-sm-5 mx-2">
             <div className="col-sm">
             <h1 className='services-header fw-bold text-center'>CloudKnod's set of technologies for software development</h1>
             <p className='fw-bold mt-3 mb-3 text-justify make-small'>Cooperate with competent and knowledgeable IT experts in web and mobile software engineering. As a trusted tech and business partner, we apply the most advanced technologies, frameworks, and components to build software notable for both its solid and effective back-end with intuitive UI/UX.</p>
             </div>
           </div>
 
-         <div className="row containerSpecial mx-5 show-btns">
+         <div className="row containerSpecial mx-sm-5 mx-2 show-btns">
             <div className="col">
             
         {/* <div className={`btn btn-secondary me-2 ${active === 1 ? 'styleActive active' : 'styleActive'}`} onClick={() => SetView(1) }>Show All</div>  */}
@@ -270,7 +270,7 @@ function Home() {
 
          {/* Consultation section */}
          <div className="containerSpecial consultationBg ">
-           <div className="row py-5 mt-3 mx-5 pe-2">
+           <div className="row py-5 mt-3 mx-sm-5 mx-2 pe-2">
               <div className="col-sm-5">
                 <h2 className=' fw-bold py-4'>Order a free IT consultation </h2>
                 <p className='fw-bold'>What happens next?</p>

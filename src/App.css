@@ -1,6 +1,7 @@
 .App{  
   font-family: "Poppins";
   color:#000;
+  overflow-x: hidden;
   
 }
 
