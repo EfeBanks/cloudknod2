@@ -63,7 +63,7 @@ function Home() {
             <video src={home2} autoPlay loop muted style={{}} />
             {/* <img src={PictureBg} alt="cloudknod bg" className='hide-pic'/> */}
             <div className="container bg-content">
-              <div className="bg-inner-content mt-5 p-5">
+              <div className="bg-inner-content mt-sm-5 mt-2 p-sm-5 p-4">
                 <h1>Empowering Business Through Innovation</h1>
                 <div ><span className='bg-button btn btn-warning'>Let's discuss your project now</span></div>
               </div>
@@ -76,9 +76,9 @@ function Home() {
 
     {/* At CloudKnod... */}
       <div className="containerSpecial consultationBg">
-        <div className="row align-items-center mx-5">
-            <div className="col-sm-8 m-4 mt-0 p-2 ps-0 "  >
-              <p className='border-end p-sm-4 at-cloudknod'>At CloudKnod, we understand that every business is unique, and so are their software requirements. Our custom software development services are designed to create tailored solutions that address your specific needs. Whether you need a web application, mobile app, desktop software, or any other software solution, our team is ready to bring your vision to life.</p>
+        <div className="row align-items-center mx-sm-5 mx-3">
+            <div className="col-sm-8 m-sm-4 m-2 mt-3 p-2 ps-0 "  >
+              <p className='border-end p-sm-4 p-2 at-cloudknod'>At CloudKnod, we understand that every business is unique, and so are their software requirements. Our custom software development services are designed to create tailored solutions that address your specific needs. Whether you need a web application, mobile app, desktop software, or any other software solution, our team is ready to bring your vision to life.</p>
             </div>
             <div className="col-sm-3 cloudknod-image">
             <img src={BrandLogo} alt="cloudknod award" className='img-fluid' />

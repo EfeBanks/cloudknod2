@@ -101,7 +101,7 @@ var settings = {
     <div>
 
       {/* ShowAll new row */}
-      <div className=" mx-5 px-5 py-5 mb-5">
+      <div className=" mx-sm-5 mx-2 px-5 py-5 mb-5">
           
             <Slider {...settings}>
             {technologies.map( (d) => (               

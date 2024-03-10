@@ -41,7 +41,7 @@ export default function Angular() {
         <div className='col androidBg-content'>
           <img src={Bg} alt="cloudknod Bg" />
             <div className="container bg-content">
-              <div className="androidBg-inner-content p-5">
+              <div className="androidBg-inner-content p-sm-5 p-2">
                 <h1><span className='text-warning'>Angular </span> Development Services</h1>
               </div>
         
@@ -79,7 +79,7 @@ export default function Angular() {
           <div className="container py-5">
             <div className="row">
               <div className="col ">
-                <h1 className='content-header fw-bold py-4'>Angular App Development Services <br/>We Offer</h1>
+                <h1 className='content-header fw-bold py-sm-4 py-2'>Angular App Development Services <br/>We Offer</h1>
                 
               </div>
             </div>

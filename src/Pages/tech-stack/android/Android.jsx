@@ -40,7 +40,7 @@ export default function Android() {
         <div className='col androidBg-content'>
           <img src={Bg} alt="cloudknod Bg" />
             <div className="container bg-content">
-              <div className="androidBg-inner-content p-5">
+              <div className="androidBg-inner-content p-sm-5 p-2">
                 <h1><span className='text-warning'>Android </span> Development Services</h1>
               </div>
         
@@ -77,7 +77,7 @@ export default function Android() {
           <div className="container py-5">
             <div className="row">
               <div className="col ">
-                <h1 className='content-header fw-bold py-4'>Android App Development Services <br/>We Offer</h1>
+                <h1 className='content-header fw-bold py-sm-4 py-2'>Android App Development Services <br/>We Offer</h1>
                 
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function Android() {
         <div className="container py-5">
           <div className="row">
               <div className="col ">
-                <h1 className='content-header fw-bold py-4'>Our Development Process </h1>
+                <h1 className='content-header fw-bold py-sm-4 py-2'>Our Development Process </h1>
                 <p>We follow a well-defined development process that ensures the success of your projects. This standardized approach guarantees consistency and quality, regardless of the service you choose. </p>
                 
               </div>

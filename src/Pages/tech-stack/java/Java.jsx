@@ -37,7 +37,7 @@ export default function Java() {
           <div className='col androidBg-content'>
             <img src={Bg} alt="cloudknod Bg" />
               <div className="container bg-content">
-                <div className="androidBg-inner-content p-5">
+                <div className="androidBg-inner-content p-sm-5 p-2">
                   <h1><span className='text-warning'>Java </span> Development Services</h1>
                 </div>
           

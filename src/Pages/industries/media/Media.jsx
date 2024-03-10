@@ -5,8 +5,7 @@ import M2 from '../../../images/m2.jpg';
 import M3 from '../../../images/m3.jpg';
 import MusicSite from '../../../images/music-site.jpg';
 import MusicSite2 from '../../../images/music-site2.jpg';
-import Button from 'react-bootstrap/Button'
-import Form from 'react-bootstrap/Form';
+import Consultation from '../../../Components/Consultation';
 import ForLogistics from '../../../Components/views/ForLogistics';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -28,7 +27,7 @@ export default function Media() {
         <div className='col androidBg-content'>
           <img src={Bg} alt="cloudknod Bg" />
             <div className="container bg-content">
-              <div className="androidBg-inner-content p-5">
+              <div className="androidBg-inner-content p-sm-5 p-2">
                 <h1 className="container"><span className='text-warning'>Media & Entertainment </span> Software Development</h1>
               </div>
         
@@ -175,72 +174,20 @@ export default function Media() {
 
           {/* IT Skills section */}
       ` <div className="containerSpecial advantageBg mt-3">
-          <div className="row py-5 mx-5">
+          <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
               <div className="col-sm ">
                 <h1 className='content-header fw-bold py-4'>Cloudknod’s tech stack for Media & Entertainment Software Development </h1> 
                 <p className='lead'>Benefit from highly experienced specialists in web and mobile development with a trusted Media & Entertainment software development company. Cloudknod employs the latest technologies, frameworks, and components to create solutions that combine a strong back-end with easy to use design.</p>
-                <ForLogistics />;
+                <ForLogistics />
               </div>
             </div>
           </div>
              {/* IT Skills section ends*/}
 
 
-         {/* Consultation section */}
-         <div className="containerSpecial consultationBg">
-           <div className="row py-5 mt-3 mx-5 pe-2">
-              <div className="col-sm-5">
-                <h2 className=' fw-bold py-4'>Schedule a free consultation </h2>
-                <p className='fw-bold'>What happens next?</p>
-                <ol>
-                  <li>An expert contacts you after having analyzed your requirements;</li>
-                  <li>If needed, we sign an NDA to ensure the highest privacy level;</li>
-                  <li>We submit a comprehensive project proposal with estimates, timelines, CVs, etc.</li>
-                </ol>
-                <p className='fw-bold'>Customers who trust us</p>
-              </div>
-             
-
-              <div className="col-sm-7 formBg">
-              <Form className='mx-4 px-3 py-4'>
-              <Form.Label>Select your service</Form.Label>
-               <Form.Select aria-label="Default select example" className='borderless mb-4 mt-2'>
-                   <option value="1">Finance</option>
-                   <option value="2">Healthcare</option>
-                   <option value="3">Media</option>
-                   <option value="3">Logistics</option>
-                   <option value="3">Automotive</option>
-                   <option value="3">Others</option>
-               </Form.Select>
-               <Form.Group className="mb-4" controlId="formGroupUser" >
-                   {/* <Form.Label>Name</Form.Label> */}
-                   <Form.Control type="text" placeholder="Name" className='borderless' />
-               </Form.Group>
-               <Form.Group className="mb-4" controlId="formGroupEmail">
-                  
-                   <Form.Control type="email" placeholder="Corporate Email *" className='borderless' />
-               </Form.Group>
-               <Form.Group className="mb-4" controlId="formGroupPhone">
-                   
-                   <Form.Control type="text" placeholder="Phone *"  className='borderless'/>
-               </Form.Group>
-
-              <div className='mb-4'>
-                <input className="form-control form-control" id="formFile" type="file"  />
-              </div>
-
-              <div className="mb-4 ">
-                <label for="exampleFormControlTextarea1" class="form-label">We will call you ASAP or you can schedule a call</label>
-                <textarea className="form-control borderless" id="exampleFormControlTextarea1" rows="2" placeholder='Please describe your project requirement*'></textarea>
-              </div>
-
-              <Button type="submit" className='btn btn-warning btn-lg fw-bold'>Send Request</Button>
-               </Form>
-              </div>
-            </div>
-            </div>
+          {/* Consultation section */}
+          <Consultation />
         {/* Consultation section ends*/}
-
 
     </div>
   )

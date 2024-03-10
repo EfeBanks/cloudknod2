@@ -99,7 +99,7 @@ export default function Showall() {
     <div>
 
       {/* ShowAll new row */}
-      <div className=" mx-5 px-5 py-5 mb-5">
+      <div className=" mx-sm-5 mx-2 px-sm-5 px-2 py-sm-5 py-2 mb-sm-5 mb-2">
           
           <Slider {...settings}>
           {technologies.map( (d) => (               
