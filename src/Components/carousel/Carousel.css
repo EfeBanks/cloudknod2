@@ -165,5 +165,8 @@
         display: none;
       }
 
+    .slider-btn{
+        margin-left: 0;
+    }
 
 }

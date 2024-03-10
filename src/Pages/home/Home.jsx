@@ -157,7 +157,7 @@ function Home() {
                 <h1 style={{ fontWeight:'bold'}} >Looking for Development Services?</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center">
-              <button className='btn btn-warning request'>Contact Us</button>
+              <button className='btn btn-warning request2'>Contact Us</button>
             </div>
           </div>
         </div>
@@ -172,7 +172,7 @@ function Home() {
             </div>
           </div>
          
-         <div className="row my-5 mx-sm-5 mx-2">
+         <div className="row mx-sm-5 mx-2 pb-3">
             <div className="col-sm-6 mb-3 mb-sm-0">
               <div className="card shadow">
                 <img src={Finance} className="card-img-top img-fluid " alt="..." style={{width:'100%'}} />
@@ -195,7 +195,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="row my-5 mx-sm-5 mx-2 pb-5">
+          <div className="row mx-sm-5 mx-2 pb-3">
             <div className="col-sm-6 mb-3 mb-sm-0">
               <div className="card shadow">
                 <img src={Media} className="card-img-top img-fluid" alt="..."  style={{width:'100%'}} />
@@ -229,7 +229,7 @@ function Home() {
             <div className="col-sm ">
                 <h1 className="consultation-header services-header">Get Free Consultation</h1>    
             <p>Discuss your project with our Experts and get a free quote.</p>
-            <button className='btn btn-warning'>Contact Us</button>
+            <button className='btn btn-warning request'>Contact Us</button>
             </div>
            
           </div>
@@ -238,11 +238,11 @@ function Home() {
          {/* Consultation ends */}
 
          {/* Set of Technologies */}
-         <div className="containerSpecial consultationBg pt-5">
+         <div className="containerSpecial consultationBg pt-sm-5 pt-1">
           <div className="row mt-5 mx-sm-5 mx-2">
             <div className="col-sm">
             <h1 className='services-header fw-bold text-center'>CloudKnod's set of technologies for software development</h1>
-            <p className='fw-bold mt-3 mb-3 text-justify make-small'>Cooperate with competent and knowledgeable IT experts in web and mobile software engineering. As a trusted tech and business partner, we apply the most advanced technologies, frameworks, and components to build software notable for both its solid and effective back-end with intuitive UI/UX.</p>
+            <p className='sm-lead mt-3 mb-3 text-justify make-small'>Cooperate with competent and knowledgeable IT experts in web and mobile software engineering. As a trusted tech and business partner, we apply the most advanced technologies, frameworks, and components to build software notable for both its solid and effective back-end with intuitive UI/UX.</p>
             </div>
           </div>
 

@@ -72,7 +72,7 @@ nav .navbar{
     font-size: 17px;
     font-weight: 500px;
     padding: 9px 15px;
-    transition: all 0.3s ease;
+    transition:0.3s ease;
 }
 
 .nav-links li .nav-link:hover{
@@ -100,7 +100,7 @@ a.mega-link:active{
     /* padding: 0 30px; */
     opacity:0;
     visibility: hidden;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .mega-container .mega-content {
@@ -174,7 +174,7 @@ a.mega-link:active{
     top: 70px;
     opacity: 1;
     visibility: visible;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .navbar .btn{
@@ -241,7 +241,7 @@ a.mega-link:active{
 @media screen and (max-width: 970px){
     /* To remove the white space at the top */
     nav {
-        margin-top:-52px !important;
+        margin-top:-82px !important;
        
     }
     nav .navbar{
@@ -259,12 +259,12 @@ a.mega-link:active{
         background-color:rgba(0, 16, 25, 0.8);
         display: block;
         top:0;
-        /* left:-100%; */
-        right:-100%;
+        left:-100%;
+        /* right:-100%; */
         overflow-y: auto;
         line-height: 50px;
         padding:50px 10px;
-        transition: all 0.3s ease;
+        transition: 0.3s ease;
 
     }
     
@@ -277,12 +277,12 @@ a.mega-link:active{
         /* background-color: #001c2ce6; */
         display: block;
         top:0;
-        /* left:-100%; */
-        right:-100%;
+        left:-100%;
+        /* right:-100%; */
         overflow-y: auto;
         line-height: 50px;
         padding:50px 10px;
-        transition: all 0.3s ease;
+        transition: 0.3s ease;
 
     }
 
@@ -290,6 +290,18 @@ a.mega-link:active{
         line-height: 50px;
         padding-top:10px;
 
+    }
+
+    /* Hiding the navbar on nav-links clicked */
+    .hide{
+        display: none;   
+        visibility: hidden;
+        transition:0s; 
+    } 
+
+     .showSpecial{
+        display:block !important;
+        /* visibility: visibile !important; */
     }
 
     .nav-links li{
@@ -314,7 +326,7 @@ a.mega-link:active{
         padding-right:20px;
         max-height: 0px;
         overflow: hidden;
-        transition: all 0.3s ease;
+        transition:0.3s ease;
     }
 
     .nav-links .mega-container li{
@@ -339,7 +351,7 @@ a.mega-link:active{
         display: block;
         color:#fff;
         cursor: pointer;
-        transition:all 0.3s ease;
+        transition: 0.3s ease;
     }
 
     .nav-links .mobile-item:hover{
@@ -385,7 +397,7 @@ a.mega-link:active{
         margin:0;
     } */
      
-     .nav-links li .nav-link:hover{
+    .nav-links li .nav-link:hover{
         border-bottom:none;      
     }
 
@@ -396,7 +408,7 @@ a.mega-link:active{
         opacity:1;
         visibility: visible;
         padding:0 20px;
-        transition: all 0.3s ease;
+        transition:0.3s ease;
     }
     
     .mega-container .mega-content {
@@ -448,6 +460,7 @@ a.mega-link:active{
 
     #menu-btn:checked ~ .btn.menu-btn{
         display:none;
+        
     } 
     
     .mobile-item:hover .icon-rotate svg {
@@ -457,7 +470,17 @@ a.mega-link:active{
         -ms-transform:rotate(180deg) !important;
         
     }
-    
+    /* .nav-link:onclicked ~ .navbar .nav-links{
+        display: none;
+        opacity:0;
+        visibility: hidden;
+    }
+
+    /* #showNavbar:checked ~ .navbar{
+        display: none;
+        opacity:0;
+        visibility: hidden;
+    } */
 
 }
 

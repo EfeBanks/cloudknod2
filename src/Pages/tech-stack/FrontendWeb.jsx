@@ -3,13 +3,12 @@ import Bg from '../../images/bg1.jpg';
 import Fr1 from '../../images/fr1.jpg';
 import Fr2 from '../../images/fr2.jpg';
 import Fr3 from '../../images/fr3.jpg';
-import Button from 'react-bootstrap/Button'
-import Form from 'react-bootstrap/Form';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import MusicSite from '../../images/music-site.jpg';
 import MusicSite2 from '../../images/music-site2.jpg';
 import Carousel from '../../Components/carousel/Carousel';
+import Consultation from '../../Components/Consultation';
 // import FrontendDev from '../../Components/views2/FrontendDev';
 // import BackendDev from '../../Components/views2/BackendDev';
 // import MobileDev from '../../Components/views2/MobileDev';
@@ -49,7 +48,7 @@ export default function FrontendWeb() {
         <div className='col androidBg-content'>
           <img src={Bg} alt="cloudknod Bg" />
             <div className="container bg-content">
-              <div className="androidBg-inner-content p-5">
+              <div className="androidBg-inner-content p-sm-5 p-2">
                 <h1 className="container"> <span className='text-warning'> Front-end</span> Development Services</h1>
               </div>
         
@@ -60,13 +59,13 @@ export default function FrontendWeb() {
 
       {/* Statistics */}
       <div className="containerSpecial consultationBg">
-        <div className="row py-5 mx-5">
+        <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
             <div className="col-sm-4">
-            <h2 className=' fw-bold py-4 mt-5'>Enhance your team with skilled Front-end development experts </h2>
+            <h2 className=' fw-bold py-sm-4 py-2 mt-sm-5 mt-2'>Enhance your team with skilled Front-end development experts </h2>
             </div>
             <div className="col-sm-8 ps-2">
               
-            <div className="row py-4">
+            <div className="row py-sm-4 py-2">
 
               <div className="col-sm me-2 hoverlay-container">
                 <img src={Fr3} alt="cloudknod" className='img-fluid hover-image' />
@@ -135,10 +134,10 @@ export default function FrontendWeb() {
 
       {/* Project Section */}
       <div className="containerSpecial consultationBg mt-3">
-        <div className="row py-4 pb-5 ms-5">
+        <div className="row py-sm-4 py-2 pb-sm-5 pb-2 ms-sm-5 ms-2">
             <div className="col-sm pe-5 pb-4">
             <h1 className='content-header fw-bold py-4'>Some of our Projects</h1> 
-            <p className='lead'>At Cloudknod, we help to create functional and visually stunning websites for your business that leaves a lasting impression on your visitors and turns them to returning customers. See our best results reflected in our delivered projects.</p> 
+            <p className='lead-sm'>At Cloudknod, we help to create functional and visually stunning websites for your business that leaves a lasting impression on your visitors and turns them to returning customers. See our best results reflected in our delivered projects.</p> 
             </div>
 
         </div>
@@ -183,60 +182,8 @@ export default function FrontendWeb() {
 
 
          {/* Consultation section */}
-         <div className="containerSpecial consultationBg">
-           <div className="row py-5 mt-3 mx-5 pe-2">
-              <div className="col-sm-5">
-                <h2 className=' fw-bold py-4'>Schedule a free IT consultation </h2>
-                <p className='fw-bold'>What happens next?</p>
-                <ol>
-                  <li>An expert contacts you after having analyzed your requirements;</li>
-                  <li>If needed, we sign an NDA to ensure the highest privacy level;</li>
-                  <li>We submit a comprehensive project proposal with estimates, timelines, CVs, etc.</li>
-                </ol>
-                <p className='fw-bold'>Customers who trust us</p>
-              </div>
-             
-
-              <div className="col-sm-7 formBg">
-              <Form className='mx-4 px-3 py-4'>
-              <Form.Label>Select your service</Form.Label>
-               <Form.Select aria-label="Default select example" className='borderless mb-4 mt-2'>
-                   <option value="1">Finance</option>
-                   <option value="2">Healthcare</option>
-                   <option value="3">Media</option>
-                   <option value="3">Logistics</option>
-                   <option value="3">Automotive</option>
-                   <option value="3">Others</option>
-               </Form.Select>
-               <Form.Group className="mb-4" controlId="formGroupUser" >
-                   {/* <Form.Label>Name</Form.Label> */}
-                   <Form.Control type="text" placeholder="Name" className='borderless' />
-               </Form.Group>
-               <Form.Group className="mb-4" controlId="formGroupEmail">
-                  
-                   <Form.Control type="email" placeholder="Corporate Email *" className='borderless' />
-               </Form.Group>
-               <Form.Group className="mb-4" controlId="formGroupPhone">
-                   
-                   <Form.Control type="text" placeholder="Phone *"  className='borderless'/>
-               </Form.Group>
-
-              <div className='mb-4'>
-                <input className="form-control form-control" id="formFile" type="file"  />
-              </div>
-
-              <div className="mb-4 ">
-                <label for="exampleFormControlTextarea1" class="form-label">We will call you ASAP or you can schedule a call</label>
-                <textarea className="form-control borderless" id="exampleFormControlTextarea1" rows="2" placeholder='Please describe your project requirement*'></textarea>
-              </div>
-
-              <Button type="submit" className='btn btn-warning btn-lg fw-bold'>Send Request</Button>
-               </Form>
-              </div>
-            </div>
-            </div>
+         <Consultation />
         {/* Consultation section ends*/}
-
 
     </div>
   )

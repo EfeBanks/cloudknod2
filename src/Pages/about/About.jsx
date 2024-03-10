@@ -3,9 +3,8 @@ import BrandLogo from '../../images/cloudknod-logo2.png';
 import Bg from '../../images/building.jpg';
 //import MusicSite from '../../images/music-site.jpg';
 //import MusicSite2 from '../../images/music-site2.jpg';
-import Button from 'react-bootstrap/Button'
-import Form from 'react-bootstrap/Form';
 //import ForLogistics from '../../Components/views/ForLogistics';
+import Consultation from '../../Components/Consultation';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Carousel from '../../Components/carousel/Carousel';
@@ -38,10 +37,10 @@ export default function About() {
 
        {/* At CloudKnod... */}
        <div className="containerSpecial consultationBg">
-        <div className="row align-items-center mx-5">
-            <div className="col-sm-8 m-4 p-4 "  >
+        <div className="row align-items-center mx-sm-5 mx-2">
+            <div className="col-sm-8 m-sm-4 p-sm-4 "  >
               {/* <h2 className='border-end p-4 fw-bold'>At CloudKnod, we empower businesses through innovation offering custom software development services tailored to meet specific needs through professional and efficient processes. </h2> */}
-              <h2 className='border-end p-4 fw-bold'>CloudKnod is a leading technology company that specializes in providing comprehensive software development and cloud services across a wide range of technology stacks. </h2>
+              <h3 className='border-end p-4 fw-bold'>CloudKnod is a leading technology company that specializes in providing comprehensive software development and cloud services across a wide range of technology stacks. </h3>
             </div>
             <div className="col-sm cloudknod-image">
             <img src={BrandLogo} alt="cloudknod award" className='img-fluid p-2' style={{height:'200px', width:"200px"}}/>
@@ -52,13 +51,13 @@ export default function About() {
 
         {/* Get to know us section */}
       <div className="containerSpecial advantageBg mt-3 pb-4">
-          <div className="row py-5 mx-5">
+          <div className="row py-5 mx-sm-5 mx-2">
               <div className="col ">
                 <h1 className='content-header fw-bold py-4 pb-2'>Get to Know Us</h1> 
               </div>
           </div>
 
-          <div className="row pb-5 mx-5">
+          <div className="row pb-5 mx-sm-5 mx-2">
           <div className="col-sm-4">
             <h4 className='pt-3 fw-bold'>CLOUD<span className='text-warning'>KNOD</span></h4>
             <p>With a commitment to innovation, efficiency, and client satisfaction, we empower businesses to transform their ideas into robust digital solutions. Our team of skilled engineers, developers, and cloud architects is dedicated to delivering cuttingedge solutions tailored to meet the unique needs of our clients. </p>
@@ -82,14 +81,14 @@ export default function About() {
 
       {/* Software Dev. section */}
       <div className="containerSpecial advantageBg mt-3">
-          <div className="row py-5 mx-5">
+          <div className="row py-5 mx-sm-5 mx-2">
               <div className="col ">
                 <h1 className='content-header fw-bold py-4 pb-2'>CloudKnod's Areas of Tech Expertise</h1> 
               </div>
           </div>
 
             {/* inner content */}
-            <div className="row pb-5 mx-5">
+            <div className="row pb-5 mx-sm-5 mx-2">
               <div className="col-sm-6 ">
                 <div className="p-4 gray-bg">
                   <h4 className='pt-3 fw-bold'>Custom Software Development</h4>
@@ -105,7 +104,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="col-sm-6 py-4">
+              <div className="col-sm-6 py-sm-4">
               <div className="p-4 gray-bg">
                   <h4 className='pt-3 fw-bold'> Mobile Development </h4>
                   <p>With Cloudknod, you can obtain a top-class custom mobile application of any complexity. We possess deep expertise and knowledge of the latest mobile development frameworks and designs.</p>
@@ -113,7 +112,7 @@ export default function About() {
                 
               </div>
 
-              <div className="col-sm-6 py-4 ">
+              <div className="col-sm-6 py-sm-4 ">
               
                 <div className="p-4 gray-bg">
                   <h4 className='pt-3 fw-bold'>Web Development</h4>
@@ -148,59 +147,8 @@ export default function About() {
 
           {/* Our Services ends */}
 
-         {/* Consultation section */}
-         <div className="containerSpecial consultationBg">
-           <div className="row py-5 mt-3 mx-5 pe-2">
-              <div className="col-sm-5">
-                <h2 className=' fw-bold py-4'>Schedule a free IT consultation </h2>
-                <p className='fw-bold'>What happens next?</p>
-                <ol>
-                  <li>An expert contacts you after having analyzed your requirements;</li>
-                  <li>If needed, we sign an NDA to ensure the highest privacy level;</li>
-                  <li>We submit a comprehensive project proposal with estimates, timelines, CVs, etc.</li>
-                </ol>
-                <p className='fw-bold'>Customers who trust us</p>
-              </div>
-             
-
-              <div className="col-sm-7 formBg">
-              <Form className='mx-4 px-3 py-4'>
-              <Form.Label>Select your service</Form.Label>
-               <Form.Select aria-label="Default select example" className='borderless mb-4 mt-2'>
-                   <option value="1">Finance</option>
-                   <option value="2">Healthcare</option>
-                   <option value="3">Media</option>
-                   <option value="3">Logistics</option>
-                   <option value="3">Automotive</option>
-                   <option value="3">Others</option>
-               </Form.Select>
-               <Form.Group className="mb-4" controlId="formGroupUser" >
-                   {/* <Form.Label>Name</Form.Label> */}
-                   <Form.Control type="text" placeholder="Name" className='borderless' />
-               </Form.Group>
-               <Form.Group className="mb-4" controlId="formGroupEmail">
-                  
-                   <Form.Control type="email" placeholder="Corporate Email *" className='borderless' />
-               </Form.Group>
-               <Form.Group className="mb-4" controlId="formGroupPhone">
-                   
-                   <Form.Control type="text" placeholder="Phone *"  className='borderless'/>
-               </Form.Group>
-
-              <div className='mb-4'>
-                <input className="form-control form-control" id="formFile" type="file"  />
-              </div>
-
-              <div className="mb-4 ">
-                <label for="exampleFormControlTextarea1" class="form-label">We will call you ASAP or you can schedule a call</label>
-                <textarea className="form-control borderless" id="exampleFormControlTextarea1" rows="2" placeholder='Please describe your project requirement*'></textarea>
-              </div>
-
-              <Button type="submit" className='btn btn-warning btn-lg fw-bold'>Send Request</Button>
-               </Form>
-              </div>
-            </div>
-            </div>
+        {/* Consultation section */}
+          <Consultation />
         {/* Consultation section ends*/}
 
 

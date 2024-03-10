@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState} from 'react'
 import './Navbar2.css';
 import {Link} from 'react-router-dom';
 import { IoIosArrowDown } from "react-icons/io";
@@ -18,6 +18,11 @@ export default function NavigationBar2() {
     }
   
     window.addEventListener('scroll', changeColor)
+
+    // Making the Navlinks close Navbar on click
+    // const [isOpen, setIsOpen] = useState(false);
+    // const toggle = () => setIsOpen(!isOpen);
+
 
     // Making the Navlinks close Navbar on click
     // useEffect(() => {
@@ -60,17 +65,20 @@ export default function NavigationBar2() {
             <input type="radio" name='slide' id='menu-btn' />
             <input type="radio" name='slide' id='cancel-btn' />
 
-            <ul className="nav-links">
+            {/* <ul className="nav-links"> */}
+            {/* <ul className={`nav-links ${isOpen ? 'hide' : ''}`} > */}
+            <ul className='nav-links'>
                 <label htmlFor="cancel-btn" className='btn cancel-btn'><FaTimes /></label>
                 <li>
                 {/* For Desktop view */}
-                <Link to='/Techstack' className="nav-link desktop-item"> Tech Stack 
+                <Link to='/Techstack' className="nav-link desktop-item" > Tech Stack 
                 <span className='icon-rotate ms-2'> <IoIosArrowDown /> </span></Link>
 
                  {/* For mobile view */}
                 <input type="checkbox" id='showMegamenu' />
                 <div className='mobile-separate mobile-item'>
                 <div className='separate1' > 
+                    {/* <Link to='/Techstack' className="nav-link" onClick={toggle}> Tech Stack </Link> */}
                     <Link to='/Techstack' className="nav-link"> Tech Stack </Link>
                 </div>
 
@@ -97,7 +105,8 @@ export default function NavigationBar2() {
                 </div> */}
                 {/* For mobile view ends */}
 
-                    <div className="mega-container">
+                    {/* <div className={`mega-container ${isOpen ? 'hide' : ''}`}> */}
+                    <div className='mega-container'>
                         <div className="mega-content">
                         <div className="row wider">
                                 
@@ -108,6 +117,7 @@ export default function NavigationBar2() {
                                 </div>
                             </div>
                             <div className="row thiner">
+                                {/* <header><Link to='/FrontendWeb' className='mega-link' onClick={toggle}>FRONT-END</Link></header> */}
                                 <header><Link to='/FrontendWeb' className='mega-link'>FRONT-END</Link></header>
                                 <ul className="mega-links">
                                     <li><Link to='/Angular' className='mega-link'>Angular</Link></li>
@@ -259,9 +269,11 @@ export default function NavigationBar2() {
                     </div>
                 </li>
                 <li><Link to='/About' className="nav-link">About Us</Link></li>
-                <li><Link to='/Contact' className="nav-link">Contact Us</Link></li>
+                <li><Link to='/Contact' className="nav-link">Contact Us</Link> </li>
+                
                 
             </ul>
+            {/* <label htmlFor="menu-btn" className={`btn menu-btn ${isOpen ? 'showSpecial' : ''}`}><FaBars /></label> */}
             <label htmlFor="menu-btn" className='btn menu-btn'><FaBars /></label>
         </div>
     </nav>

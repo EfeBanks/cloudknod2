@@ -37,7 +37,7 @@ export default function Industries() {
 
       {/* Cloudknod Advantage section */}
       <div className="containerSpecial advantageBg">
-          <div className="row py-5 mx-5">
+          <div className="row py-5 mx-sm-5 mx-2">
               <div className="col ">
                 <h1 className='content-header fw-bold py-4'>Cloudknod's Advantages </h1>
                 
@@ -45,7 +45,7 @@ export default function Industries() {
           </div>
 
             {/* inner content */}
-            <div className="row pb-5 mx-5">
+            <div className="row pb-5 mx-sm-5 mx-2">
               <div className="col-sm-6 ">
               
                 <div className=" px-3">
@@ -62,7 +62,7 @@ export default function Industries() {
                 </div>
               </div>
 
-              <div className="col-sm-6 py-4">
+              <div className="col-sm-6 py-sm-4">
               
                 <div className="px-3">
                   <h4 className='pt-3'>Extensive IT talent pool</h4>
@@ -70,7 +70,7 @@ export default function Industries() {
                 </div>
               </div>
 
-              <div className="col-sm-6  py-4 ">
+              <div className="col-sm-6  py-sm-4 ">
               
                 <div className="px-3">
                   <h4 className='pt-3'>High customer satisfaction rates</h4>
@@ -83,7 +83,7 @@ export default function Industries() {
 
              {/* Consultation section */}
           <div className="containerSpecial consultationBg ">
-           <div className="row py-5 mt-3 mx-5 pe-2">
+           <div className="row py-5 mt-3 mx-sm-5 mx-2 pe-2">
               <div className="col-sm-5">
                 <h2 className=' fw-bold py-4'>Schedule a free consultation </h2>
                 <p className='fw-bold'>What happens next?</p>

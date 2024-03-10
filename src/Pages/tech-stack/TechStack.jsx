@@ -54,7 +54,7 @@ export default function Media() {
 
       {/* Techstack section */}
       <div className="containerSpecial consultationBg">
-        <div className="row py-4 pb-5 ms-5">
+        <div className="row py-4 pb-5 ms-sm-5 ms-2">
             <div className="col-sm pe-5 pb-4">
             <h1 className='content-header fw-bold py-4'>Technologies We Use</h1> 
             <div className="row containerSpecial">
@@ -101,7 +101,7 @@ export default function Media() {
 
       {/* Cloudknod's Guarantee section */}
       <div className="containerSpecial advantageBg mt-3">
-          <div className="row py-5 mx-5">
+          <div className="row py-5 mx-sm-5 mx-2">
               <div className="col ">
                 <h1 className='content-header fw-bold py-4 px-3'>Cloudknod's Guarantee</h1>
                 <p className="lead px-3">Cloudknod, a custom software development vendor and consulting partner, our team is known for:</p>
@@ -110,7 +110,7 @@ export default function Media() {
           </div>
 
             {/* inner content */}
-            <div className="row pb-5 mx-5">
+            <div className="row pb-5 mx-sm-5 mx-2">
               <div className="col-sm-6 ">
               
                 <div className=" px-sm-3">
@@ -127,7 +127,7 @@ export default function Media() {
                 </div>
               </div>
 
-              <div className="col-sm-6 py-4">
+              <div className="col-sm-6 py-sm-4">
               
                 <div className="px-sm-3">
                   <h4 className='pt-3 fw-bold'>Strategic development partner</h4>
@@ -135,7 +135,7 @@ export default function Media() {
                 </div>
               </div>
 
-              <div className="col-sm-6  py-4 ">
+              <div className="col-sm-6  py-sm-4 ">
               
                 <div className="px-sm-3">
                   <h4 className='pt-3 fw-bold'>Customer trust</h4>
@@ -150,7 +150,7 @@ export default function Media() {
 
          {/* Consultation section */}
          <div className="containerSpecial consultationBg">
-           <div className="row py-5 mt-3 mx-5 pe-2">
+           <div className="row py-5 mt-3 mx-sm-5 mx-2 pe-2">
               <div className="col-sm-5">
                 <h2 className=' fw-bold py-4'>Schedule a free IT consultation </h2>
                 <p className='fw-bold'>What happens next?</p>

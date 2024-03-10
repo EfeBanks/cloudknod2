@@ -136,6 +136,10 @@
 /* Media Query */
 @media screen and (max-width:768px){
 
+  .home-body{
+    overflow-x: hidden;
+  }
+
   .androidBg-content img{
       height: 80vh;
       
@@ -172,14 +176,13 @@
       color:#FFC107;
   }
 
-  .request{
-      margin-left: 7%;
-      /* margin:auto; */
-      
-  }
 
   .justify-text{
     text-align:justify;
+}
+
+.hover-image{
+  height: 250px !important;
 }
 
 
