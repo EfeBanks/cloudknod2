@@ -123,7 +123,7 @@ export default function Telecom() {
                 <h1 style={{ fontWeight:'bold'}} >Schedule a call to assess and discuss your IT project</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center ">
-              <button className='btn btn-warning request p-2'>Request Consultation</button>
+              <button className='btn btn-warning request1 p-2'>Request Consultation</button>
             </div>
           </div>
         </div>

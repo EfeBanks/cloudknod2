@@ -35,17 +35,17 @@ export default function Automotive() {
 
       {/* Statistics */}
       <div className="containerSpecial consultationBg">
-        <div className="row py-5 mx-sm-5 mx-2">
+        <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
             <div className="col-sm-4">
-            <h2 className=' fw-bold py-4 mt-sm-5 mt-2'>Advanced Automotive Software Development Services </h2>
+            <h2 className=' fw-bold py-sm-4 py-2 mt-sm-5 mt-2'>Advanced Automotive Software Development Services </h2>
             </div>
             <div className="col-sm-8 ps-2">
               
-            <div className="row py-4">
+            <div className="row py-sm-4 py-2">
 
               <div className="col-sm me-2 hoverlay-container">
                 <img src={A1} alt="cloudknod" className='img-fluid hover-image' />
-                <div className="hoverlay2 text-center px-3">
+                <div className="hoverlay2 text-center px-sm-3 px-1">
                   <h4 className='pt-3'>20+ Successful Projects</h4>
                   <p>Being a trusted vendor of Automotive Software Development Services, Cloudknod builds Automotive IT softwares, IoT and Connectivity apps etc.</p>
                 </div>
@@ -54,7 +54,7 @@ export default function Automotive() {
               <div className="col-sm  me-2 hoverlay-container ">
                 <img src={A2} alt="cloudknod" className='img-fluid hover-image' />
               
-                <div className="hoverlay2 text-center px-3">
+                <div className="hoverlay2 text-center px-sm-3 px-1">
                   <h4 className='pt-3'>30+ Automotive Software Engineers </h4>
                   <p>As a leading software development company, Cloudknod employs both knowledgeable and skilled experts with industry-specific expertise. </p>
                 </div>
@@ -63,7 +63,7 @@ export default function Automotive() {
               <div className="col-sm me-2 hoverlay-container ">
                 <img src={A3} alt="cloudknod" className='img-fluid hover-image' />
               
-                <div className="hoverlay2 text-center px-3">
+                <div className="hoverlay2 text-center px-am-3 px-1">
                   <h4 className='pt-3'>12 Years of Experience</h4>
                   <p>Over the last 12 years, our team has gained experience in Automotive Software Solutions.</p>
                 </div>
@@ -78,11 +78,11 @@ export default function Automotive() {
 
       {/* Request Consultation */}
       <div className="containerSpecial consultationBg mt-3">
-        <div className="row py-4 pb-5 ms-5">
-            <div className="col-sm-9 pe-5 pb-4">
+        <div className="row py-4 pb-5 ms-sm-5 ms-2">
+            <div className="col-sm-9 pe-sm-5 pe-2 pb-sm-4 pb-2">
             <h2 className=' fw-bold pt-5 mt-sm-5 mt-2'>Whatever your software challenge is, our IT solution experts are ready to help you. Schedule a free online consultation. </h2>
     
-            <Button variant="warning" className='request slider-btn btn btn-lg mt-4 fw-bold'>
+            <Button variant="warning" className='request slider-btn btn btn-lg mt-sm-4 mt-1'>
                   Request Consultation
               </Button> 
             </div>
@@ -94,7 +94,7 @@ export default function Automotive() {
 
       {/* Why Automotive section */}
       <div className="containerSpecial advantageBg mt-3">
-          <div className="row py-5 mx-sm-5 mx-2">
+          <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
               <div className="col ">
                 <h1 className='content-header fw-bold py-sm-4 py-2'>Why do Automotive customers choose Cloudknod</h1>
                 
@@ -102,7 +102,7 @@ export default function Automotive() {
           </div>
 
             {/* inner content */}
-            <div className="row pb-5 mx-sm-5 mx-2">
+            <div className="row pb-sm-5 pb-2 mx-sm-5 mx-2">
               <div className="col-sm-6 ">
               
                 <div className=" px-sm-3 px-1">
@@ -147,7 +147,7 @@ export default function Automotive() {
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center ">
-              <button className='btn btn-warning request p-2 btn btn-lg fw-bold'>Request Services</button>
+              <button className='btn btn-warning request p-2 btn btn-lg'>Request Services</button>
             </div>
           </div>
         </div>

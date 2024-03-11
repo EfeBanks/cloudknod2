@@ -38,17 +38,17 @@ export default function Media() {
 
       {/* Statistics */}
       <div className="containerSpecial consultationBg">
-        <div className="row py-5 mx-5">
+        <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
             <div className="col-sm-4">
-            <h2 className=' fw-bold py-4 mt-5'>Work with an expert Media & Entertainment IT company </h2>
+            <h2 className=' fw-bold py-sm-4 py-2 mt-sm-5 mt-2'>Work with an expert Media & Entertainment IT company </h2>
             </div>
             <div className="col-sm-8 ps-2">
               
-            <div className="row py-4">
+            <div className="row py-sm-4 py-2">
 
               <div className="col-sm me-2 hoverlay-container">
                 <img src={M1} alt="cloudknod" className='img-fluid hover-image' />
-                <div className="hoverlay2 text-center px-3">
+                <div className="hoverlay2 text-center px-sm-3 px-1">
                   {/* <h4 className='pt-3'>30+ Successful IT Projects</h4> */}
                   <p className='pt-3'>Over the years, we have been delivering Media Entertainment Software solutions for some large companies as well as SMEs.</p>
                 </div>
@@ -57,7 +57,7 @@ export default function Media() {
               <div className="col-sm  me-2 hoverlay-container ">
                 <img src={M2} alt="cloudknod" className='img-fluid hover-image' />
               
-                <div className="hoverlay2 text-center px-3">
+                <div className="hoverlay2 text-center px-sm-3 px-1">
                   <p className='pt-3'>As a top-ranked Media & Entertainment app development company, Cloudknod employs IT experts with a wide tech stack to build the best solutions for our Customers.</p>
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function Media() {
               <div className="col-sm me-2 hoverlay-container ">
                 <img src={M3} alt="cloudknod" className='img-fluid hover-image' />
               
-                <div className="hoverlay2 text-center px-3">
+                <div className="hoverlay2 text-center px-sm-3 px-1">
                   <p className='pt-3'>Over the last 12 years, our team has gained experience and vast knowledge in creating Media and Entertainment Software Solutions for our Customers.</p>
                 </div>
               </div>
@@ -79,20 +79,15 @@ export default function Media() {
 
       {/* Media App */}
       <div className="containerSpecial consultationBg mt-3">
-        <div className="row py-4 pb-5 ms-5">
-            <div className="col-sm pe-5 pb-4">
+        <div className="row py-sm-4 py-2 pb-sm-5 pb-1 ms-sm-5 ms-2">
+            <div className="col-sm pe-sm-5 pe-2 pb-sm-4 pb-2">
             <h1 className='content-header fw-bold py-4'>Cloudknod's case studies in Media & Entertainment Software Development</h1> 
-            <p className='lead'>Cloudknod, as a Media & Entertainment app development company, helps to create best-in-class software tools for your business to perfectly fit your needs. See our best results reflected in our delivered projects.</p>
+            <p className=''>Cloudknod, as a Media & Entertainment app development company, helps to create best-in-class software tools for your business to perfectly fit your needs. See our best results reflected in our delivered projects.</p>
             
             </div>
-            {/* <div className="col-sm-5 ">
-                <img src={MusicSite} alt="cloudknod" className='img-fluid' />
-              
-            </div> */}
-
         </div>
 
-        <div className="row pb-5">
+        <div className="row pb-sm-5 pb-2">
           <div className="col-sm-6">
             <img src={MusicSite} alt="cloudknod" className='img-fluid hover-img' />
             <p className='py-4 lead fw-bold text-center'>A Music Site for an Entertainment Company</p>
@@ -112,14 +107,14 @@ export default function Media() {
 
       {/* Software Dev. section */}
       <div className="containerSpecial advantageBg mt-3">
-          <div className="row py-5 mx-5">
+          <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
               <div className="col ">
-                <h1 className='content-header fw-bold py-4'>Media & Entertainment Software Development </h1> 
+                <h1 className='content-header fw-bold py-4 '>Media & Entertainment Software Development </h1> 
               </div>
           </div>
 
             {/* inner content */}
-            <div className="row pb-5 mx-5">
+            <div className="row pb-sm-5 pb-2 mx-sm-5 mx-0">
               <div className="col-sm-6 ">
                 <div className="p-4 gray-bg">
                   <h4 className='pt-3 fw-bold'>Social Media Software Development</h4>
@@ -135,7 +130,7 @@ export default function Media() {
                 </div>
               </div>
 
-              <div className="col-sm-6 py-4">
+              <div className="col-sm-6 py-sm-4 py-0">
               <div className="p-4 gray-bg">
                   <h4 className='pt-3 fw-bold'> Digital Asset Management Solutions </h4>
                   <p>Implementing a Digital Asset Management System is not a problem with Cloudknod, as we know how to help enterprises automate media lifecycle processes and deliver content via custom DAM tools.</p>
@@ -143,7 +138,7 @@ export default function Media() {
                 
               </div>
 
-              <div className="col-sm-6 py-4 ">
+              <div className="col-sm-6 py-sm-4 py-0 ">
               
                 <div className="p-4 gray-bg">
                   <h4 className='pt-3 fw-bold'>Video on Demand App Development</h4>
@@ -165,7 +160,7 @@ export default function Media() {
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center ">
-              <button className='btn btn-warning request p-3'>Request Services</button>
+              <button className='btn btn-warning request2 p-sm-3 p-1'>Request Services</button>
             </div>
           </div>
         </div>

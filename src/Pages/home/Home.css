@@ -7,6 +7,7 @@
     
 }
 
+
 .home-body{
     background-color: #001019;
 }
@@ -114,10 +115,9 @@
         height:70vh;
    
     }
-
-    /* .cloudknod-image img.img-fluid{
-        margin:-20px 60px 60px 60px;
-    } */
+    .videoBg{
+        background-image: url(../../images/mobileBg.jpg);
+    }
 
     .bg-inner-content h1{
         font-size: 10vw;
@@ -140,7 +140,7 @@
     .at-cloudknod{
         text-align: justify;
     }
-    
+
     .cloudknod-image img{
         /* margin:-30% 30% 0 0; */
         margin-left:17%;
@@ -163,6 +163,10 @@
 
     .request2{
         margin-left: 13%;
+    }
+
+    .contact-btn{
+        margin-left:20%;
     }
     
 

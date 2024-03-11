@@ -57,15 +57,15 @@ function Home() {
   return (
     <div className='home-body'>
       {/* Banner section */}
-      <div className="row ">
+      <div className="row">
         <div className='col videoBg'>
             {/* <div className="overlay"></div> */}
-            <video src={home2} autoPlay loop muted style={{}} />
+            <video src={home2} autoPlay loop muted />
             {/* <img src={PictureBg} alt="cloudknod bg" className='hide-pic'/> */}
             <div className="container bg-content">
               <div className="bg-inner-content mt-sm-5 mt-2 p-sm-5 p-4">
                 <h1>Empowering Business Through Innovation</h1>
-                <div ><span className='bg-button btn btn-warning'>Let's discuss your project now</span></div>
+                <div ><span className='bg-button btn btn-warning ms-sm-0 ms-4'>Let's discuss your project now</span></div>
               </div>
               <div className="bg-inner-content"></div>
         
@@ -157,7 +157,7 @@ function Home() {
                 <h1 style={{ fontWeight:'bold'}} >Looking for Development Services?</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center">
-              <button className='btn btn-warning request2'>Contact Us</button>
+              <button className='btn btn-warning contact-btn'>Contact Us</button>
             </div>
           </div>
         </div>

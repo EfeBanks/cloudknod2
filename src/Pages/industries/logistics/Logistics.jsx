@@ -39,9 +39,9 @@ export default function Logistics() {
 
       {/* Statistics */}
       <div className="containerSpecial consultationBg">
-        <div className="row py-5 mx-sm-5 mx-2">
+        <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
             <div className="col-sm-4">
-            <h2 className=' fw-bold py-4 mt-sm-5 mt-2'>Custom software solutions for the Logistics industry </h2>
+            <h2 className=' fw-bold py-sm-4 py-2 mt-sm-5 mt-2'>Custom software solutions for the Logistics industry </h2>
             </div>
             <div className="col-sm-8 ps-2">
               
@@ -88,7 +88,7 @@ export default function Logistics() {
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center ">
-              <button className='btn btn-warning request p-3'>Request Services</button>
+              <button className='btn btn-warning contact-btn p-sm-3 p-1'>Request Services</button>
             </div>
           </div>
         </div>
