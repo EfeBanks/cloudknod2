@@ -91,7 +91,7 @@ export default function Media() {
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center ">
-              <button className='btn btn-warning request p-3 fw-bold'>Request Services</button>
+              <button className='btn btn-warning request2 p-sm-3 p-2 fw-bold'>Request Services</button>
             </div>
           </div>
         </div>

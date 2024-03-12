@@ -1,7 +1,6 @@
 .App{  
   font-family: "Poppins";
   color:#000;
-  overflow-x: hidden;
   
 }
 
@@ -18,6 +17,14 @@
   font-size: 70px;
   font-weight: bold;
   color:white;
+}
+
+.contactformBg img{
+  width:100%;
+  margin:-10% 0 0 0;
+  height: 80vh;
+  object-fit: cover;
+  
 }
 
 .text{
@@ -133,6 +140,7 @@
 }
 
 
+
 /* Media Query */
 @media screen and (max-width:768px){
 
@@ -149,6 +157,7 @@
       font-size: 35px;
       
   }
+
 
   .content-header{
       font-size: 1.5rem;

@@ -1,9 +1,9 @@
 import './App.css';
+import {useState} from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-//import Navbar from './Components/navbar/Navbar';
-//import NavigationBar from './Components/navbar/Navbar';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+//import NavigationBar2 from './Components/navbar2/Navbar2old';
 import NavigationBar2 from './Components/navbar2/Navbar2';
 import Home from './Pages/home/Home';
 import TechStack from './Pages/tech-stack/TechStack';
@@ -12,6 +12,7 @@ import Industries from './Pages/industries/Industries';
 import Contact from './Pages/contact/Contact';
 import About from './Pages/about/About';
 import Footer from './Components/footer/Footer';
+import ContactForm from './Components/ContactForm';
 
 //
 import FrontendWeb from './Pages/tech-stack/FrontendWeb';
@@ -53,10 +54,11 @@ import CloudDevelopment from './Pages/services/cloudDev/CloudDevelopment';
 
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="App">
       <Router>
-        <NavigationBar2 />
+        <NavigationBar2 menuOpen={menuOpen} setMenuOpen = {setMenuOpen} />
         <Routes>
           <Route path ='/' element = {<Home />} />
           <Route path = "TechStack" element = {<TechStack/>} />
@@ -99,6 +101,8 @@ function App() {
           <Route path = "ITSecurity" element = {<ITSecurity/>} />
           <Route path = "Devops" element = {<Devops/>} />
           <Route path = "CloudDevelopment" element = {<CloudDevelopment/>} />
+          <Route path = "ContactForm" element = {<ContactForm/>} />
+          
           
         </Routes>
         <Footer/>

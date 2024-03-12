@@ -1,15 +1,30 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form';
+import Bg from '../images/bg2.jpg';
 
-export default function Consultation() {
+export default function ContactForm() {
   return (
-    <div>
-  {/* Consultation section*/}
-    <div className="containerSpecial consultationBg">
-           <div className="row py-5 mt-3 mx-sm-5 mx-2 pe-2">
+    <div className='home-body'>
+      {/* Banner section */}
+      <div className="row">
+        <div className='contactformBg'>
+          <img src={Bg} alt="cloudknod Bg" />
+            <div className="bg-content">
+              <div className="androidBg-inner-content p-sm-5 p-0">
+                <h1 className="container"><span className='text-warning'>Schedule</span> a free consultation</h1>
+              </div>
+        
+            </div>       
+        </div>
+      </div>
+        {/* Banner section ends */}
+        
+        {/* Consultation section*/}
+      <div className="containerSpecial consultationBg">
+           <div className="row py-5 mx-sm-5 mx-2 pe-2">
               <div className="col-sm-5">
-                <h2 className=' fw-bold py-4'>Schedule a free consultation</h2>
+                <h2 className=' fw-bold py-sm-4 py-2'>Schedule a free consultation</h2>
                 <p className='fw-bold'>What happens next?</p>
                 <ol>
                   <li>An expert contacts you after having analyzed your requirements;</li>
@@ -57,7 +72,8 @@ export default function Consultation() {
               </div>
             </div>
         </div> 
-{/* Consultation section ends*/}
+      {/* Consultation section ends*/}
     </div>
   )
 }
+
