@@ -210,6 +210,15 @@ a.mega-link:active{
     
 }
 
+.menu-btn svg{
+    color:#fff;
+    border:none !important;
+}
+
+.menu-btn svg:active{
+    color:#fff;
+    border:none !important;
+}
 
 
 @media screen and (max-width: 970px){
@@ -377,10 +386,12 @@ a.mega-link:active{
 
     .navbar .btn{
         display: block;
+        color:#fff;
     }
 
     .custom-navbar .btn{
         display: block;
+        color:#fff;
     }
     
     .mobile-item:hover .icon-rotate svg {
@@ -394,11 +405,6 @@ a.mega-link:active{
      /* Extra CSS code ends */
     .nav-links.show{
         left:0%;
-    }
-    .menu-btn.hide-btn{
-        display:none !important;
-        opacity:0 !important;
-        visibility: hidden !important;
     }
 
     .mega-container {
@@ -423,6 +429,16 @@ a.mega-link:active{
         transform:rotate(180deg) !important;
         -webkit-transform:rotate(180deg) !important;
         -ms-transform:rotate(180deg) !important;   
+    }
+
+    .menu-btn svg{
+        color:#fff;
+        border:none !important;
+    }
+
+    .menu-btn svg:active{
+        color:#fff;
+        border:none !important;
     }
     /* Extra CSS code ends */
  

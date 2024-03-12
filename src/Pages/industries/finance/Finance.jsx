@@ -49,8 +49,8 @@ export default function Finance() {
 
               <div className="col-sm me-2 hoverlay-container">
                 <img src={F3} alt="cloudknod" className='img-fluid hover-image' />
-                <div className="hoverlay2 text-center px-3">
-                  <h4 className='pt-3'>200+ Delivered Projects</h4>
+                <div className="hoverlay2 text-center px-sm-3 px-1">
+                  <h4 className='pt-3 text-warning'>200+ Delivered Projects</h4>
                   <p>We've built a significant number of financial APIs, mobile banking and insurance apps, trading platforms, and other financial software solutions.</p>
                 </div>
               </div>
@@ -58,8 +58,8 @@ export default function Finance() {
               <div className="col-sm  me-2 hoverlay-container ">
                 <img src={F2} alt="cloudknod" className='img-fluid hover-image' />
               
-                <div className="hoverlay2 text-center px-3">
-                  <h4 className='pt-3'>80+ Industry-focused Engineers </h4>
+                <div className="hoverlay2 text-center px-sm-3 px-1">
+                  <h4 className='pt-3 text-warning'>80+ Industry-focused Engineers </h4>
                   <p>About 65% of our developers have more than four years of experience with FinTech products.</p>
                 </div>
               </div>
@@ -67,7 +67,7 @@ export default function Finance() {
               <div className="col-sm me-2 hoverlay-container ">
                 <img src={F1} alt="cloudknod" className='img-fluid hover-image' />
               
-                <div className="hoverlay2 text-center px-3">
+                <div className="hoverlay2 text-center px-sm-3 px-1">
                   <h4 className='pt-3'>100+ Satisfied Clients</h4>
                   <p>With our exceptional and functional fintech software service, we've gained over a 100 loyal and satisfied customers worldwide.</p>
                 </div>

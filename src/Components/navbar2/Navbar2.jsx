@@ -226,7 +226,7 @@ export default function NavigationBar2({menuOpen, setMenuOpen}) {
             </ul>
           
             <div className='btn menu-btn ms-2 mb-2'>
-            <FaBars  onClick={() => setMenuOpen (!menuOpen && 'svg hide-btn')} />
+            <FaBars  onClick={() => setMenuOpen (!menuOpen)} />
             </div>
         </div>
     </nav>
