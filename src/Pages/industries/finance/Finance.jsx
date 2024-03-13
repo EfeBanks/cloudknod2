@@ -9,6 +9,7 @@ import Consultation from '../../../Components/Consultation';
 import ForLogistics from '../../../Components/views/ForLogistics';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -39,13 +40,13 @@ export default function Finance() {
 
       {/* Statistics */}
       <div className="containerSpecial consultationBg">
-        <div className="row py-5 mx-sm-5 mx-2">
+        <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
             <div className="col-sm-4">
             <h2 className=' fw-bold py-4 mt-sm-5 mt-2'>Entrust your project to Cloudknod </h2>
             </div>
             <div className="col-sm-8 ps-2">
               
-            <div className="row py-4">
+            <div className="row py-sm-4 py-2">
 
               <div className="col-sm me-2 hoverlay-container">
                 <img src={F3} alt="cloudknod" className='img-fluid hover-image' />
@@ -86,9 +87,11 @@ export default function Finance() {
             <div className="col-sm-7 pe-5 pb-4">
             <h2 className=' fw-bold pt-sm-5 pt-2 mt-sm-5 mt-2'>Cloudknod's Digital Banking App for Financial Service Companies </h2>
             <p>See the advantages offered by our white-label digital wallet and mobile banking app for traditional banks and FinTech service providers.</p>
-            <Button variant="warning" className='request slider-btn btn btn-lg '>
-                  Request Service
-              </Button> 
+            <Link to='/ContactForm'>
+                <Button variant="warning" className='request slider-btn btn btn-lg '>
+                    Request Service
+                </Button>
+            </Link> 
             </div>
             <div className="col-sm-5 ">
                 <img src={FinanceApp} alt="cloudknod" className='img-fluid' />
@@ -102,7 +105,7 @@ export default function Finance() {
 
       {/* Software Dev. section */}
       <div className="containerSpecial advantageBg mt-3">
-          <div className="row py-5 mx-sm-5 mx-2">
+          <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
               <div className="col ">
                 <h1 className='content-header fw-bold py-sm-4 py-2'>Software development scope available with us </h1> 
               </div>
@@ -124,17 +127,17 @@ export default function Finance() {
                 </div>
               </div>
 
-              <div className="col-sm-6 py-sm-4 py-2">
-              <div className="p-4 gray-bg">
+              <div className="col-sm-6 py-sm-4 py-0">
+              <div className="p-sm-4 p-2 gray-bg">
                   <h4 className='pt-3 fw-bold'> Banking Software Development </h4>
                   <p>Make your banking business modern and digitized by relying on Cloudknod's expertise in custom products, SaaS approaches and ability to make the most of off-the-shelf software.</p>
                 </div>
                 
               </div>
 
-              <div className="col-sm-6 py-sm-4 py-2 ">
+              <div className="col-sm-6 py-sm-4 py-0 ">
               
-                <div className="p-4 gray-bg">
+                <div className="p-sm-4 p-2 gray-bg">
                   <h4 className='pt-3 fw-bold'>Investment Software Development</h4>
                   <p>Ensure effective portfolio management, profitability and client satisfaction with smart and feature-rich investment tools developed by Cloudknod.</p>
                 </div>
@@ -154,7 +157,9 @@ export default function Finance() {
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center ">
-              <button className='btn btn-warning request p-3'>Request Services</button>
+            <Link to='/ContactForm'>
+              <button className='btn btn-warning request p-sm-3 p-2 ms-sm-0 ms-5'>Request Services</button>
+            </Link>
             </div>
           </div>
         </div>

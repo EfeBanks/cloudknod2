@@ -31,13 +31,13 @@ export default function Vue() {
   }, [pathname]);
      
 return (
-  <div className='androidBg'>
+  <div>
      {/* Banner section */}
      <div className="row ">
       <div className='col androidBg-content'>
         <img src={Bg} alt="cloudknod Bg" />
           <div className="container bg-content">
-            <div className="androidBg-inner-content p-5">
+            <div className="androidBg-inner-content p-sm-5 p-2">
               <h1> VUE-TIFY Your Digital World with <span className='text-warning'> Vue </span> </h1>
             </div>
       
@@ -48,7 +48,7 @@ return (
 
     {/* content section 1*/}
     <div className="container">
-    <div className="row py-5 px-2 mt-3">
+    <div className="row py-sm-5 py-2 px-2 mt-3">
         <div className="col-sm-4 text">
             <p>In a world where user-centric web experiences are paramount, Vue.js stands out as a versatile and powerful framework for creating dynamic and interactive web applications. We offer Vue Development Services that are designed to infuse your digital projects with creativity, interactivity, and cutting-edge technology. Our Vue.js developers are passionate about turning your ideas into immersive web experiences that captivate and engage users.
              </p>
@@ -70,10 +70,10 @@ return (
 
       {/* content section 2 */}
       <section className='contentBg p-4'>
-        <div className="container py-5">
+        <div className="container py-sm-5 py-2">
           <div className="row">
             <div className="col ">
-              <h1 className='content-header fw-bold py-4'>Vue Development Services <br/>We Offer</h1>
+              <h1 className='content-header fw-bold py-sm-4 py-2'>Vue Development Services <br/>We Offer</h1>
               
             </div>
           </div>
@@ -118,10 +118,10 @@ return (
         {/* content section 2 ends */}
 
         {/* content section 3*/}
-      <div className="container py-5">
+      <div className="container py-sm-5 py-2">
         <div className="row">
             <div className="col ">
-              <h1 className='content-header fw-bold py-4'>Our Development Process </h1>
+              <h1 className='content-header fw-bold py-sm-4 py-2'>Our Development Process </h1>
               <p className='text'>We follow a well-defined development process that ensures the success of your projects. This standardized approach guarantees consistency and quality, regardless of the service you choose. </p>
               
             </div>
@@ -200,7 +200,7 @@ return (
           <div className="col-sm-9 border-start border-warning development-header">
               <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
           </div>
-          <div className="col-sm ms-4 d-flex align-items-center ">
+          <div className="col-sm ms-5 d-flex align-items-center ">
             <Button variant="warning" onClick={handleShow}  className='request'>
               Request Service
           </Button> 
@@ -261,7 +261,7 @@ return (
                  </div>
 
                  <div className="mfooter">
-                     Customers who trust us...
+                     
                  </div>
              </div>     
          </div>
@@ -272,9 +272,9 @@ return (
        <Button variant="warning" onClick={handleClose}>
          Submit
        </Button>
-       {/* <Button variant="secondary" onClick={handleClose}>
+       <Button variant="secondary" onClick={handleClose}>
          Close
-       </Button> */}
+       </Button>
       
      </Modal.Footer>
      </Modal>

@@ -50,7 +50,7 @@ export default function NavigationBar2({menuOpen, setMenuOpen}) {
                 </div>
 
                 <div className='separate2' > 
-                <div className=" ms-2 nav-link"><span className='toggle-rotate ms-2' onClick={() => setMegaOpen (!megaOpen)}> <IoIosArrowDown /> </span></div>
+                <div className=" ms-2 nav-link"><span className=' ms-2' onClick={() => setMegaOpen (!megaOpen)}> <IoIosArrowDown /> </span></div>
                 </div>
 
                 </div>
@@ -111,7 +111,7 @@ export default function NavigationBar2({menuOpen, setMenuOpen}) {
                         </div>
 
                         <div className='separate2' > 
-                           <div className=" ms-2 nav-link"><span className='toggle-rotate ms-2' onClick={() => setMegaShow (!megaShow)}> <IoIosArrowDown /> </span></div>
+                           <div className=" ms-2 nav-link"><span className=' ms-2' onClick={() => setMegaShow (!megaShow)}> <IoIosArrowDown /> </span></div>
                         </div>
 
                         </div>
@@ -166,7 +166,7 @@ export default function NavigationBar2({menuOpen, setMenuOpen}) {
                         </div>
 
                         <div className='separate2' > 
-                            <div className=" ms-2 nav-link"><span className='toggle-rotate ms-2' onClick={() => setShowMega (!showMega)}> <IoIosArrowDown /> </span>
+                            <div className=" ms-2 nav-link"><span className=' ms-2' onClick={() => setShowMega (!showMega)}> <IoIosArrowDown /> </span>
                             </div>
                         </div>
 

@@ -10,6 +10,7 @@ import Consultation from '../../../Components/Consultation';
 import ForLogistics from '../../../Components/views/ForLogistics';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -87,8 +88,10 @@ export default function Logistics() {
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
-            <div className="col-sm ms-4 d-flex align-items-center ">
-              <button className='btn btn-warning contact-btn p-sm-3 p-1'>Request Services</button>
+             <div className="col-sm ms-4 d-flex align-items-center ">
+            <Link to='/ContactForm'>
+              <button className='btn btn-warning request p-2 ms-sm-0 ms-5'>Request Services</button>
+            </Link>
             </div>
           </div>
         </div>
@@ -99,18 +102,18 @@ export default function Logistics() {
       <div className="containerSpecial consultationBg mt-3 pb-5">
           <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
               <div className="col ">
-                <h1 className='content-header fw-bold py-sm-4 py-2'>Businesses We Serve </h1> 
+                <h1 className='content-header fw-bold py-4'>Businesses We Serve </h1> 
               </div>
           </div>
 
             {/* inner content */}
-            <div className=" row pb-5 mx-sm-5 mx-2">
+            <div className=" row pb-sm-5 pb-2 mx-sm-5 mx-2">
 
               <div className="col-sm  me-2 hoverlay-container">
                 <img src={B1} alt="cloudknod" className='img-fluid hover-image' />
               
                 <div className="hoverlay2 text-center px-3">
-                  <h4 className='pt-3'>Parcel and Courier Delivery </h4>
+                  <h4 className='pt-sm-3 pt-0'>Parcel and Courier Delivery </h4>
                   <p>Our skilled design team creates wireframes and prototypes to visualize the user interface and user experience. This step ensures that the design aligns with your branding and user expectations. </p>
                 </div>
               </div>
@@ -128,7 +131,7 @@ export default function Logistics() {
                 <img src={B3} alt="cloudknod" className='img-fluid hover-image' />
               
                 <div className="hoverlay2 text-center px-3">
-                  <h4 className='pt-3'>Carriers and Freight Forwarders</h4>
+                  <h4 className='pt-sm-3 pt-0'>Carriers and Freight Forwarders</h4>
                   <p>We start every project with a thorough analysis of your specific requirements, objectives, and target audience. Understanding your unique needs is key to creating a tailored solution.</p>
                 </div>
               </div>
@@ -143,8 +146,8 @@ export default function Logistics() {
       ` <div className="containerSpecial advantageBg ">
           <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
               <div className="col-sm ">
-                <h1 className='content-header fw-bold py-sm-4 py-2'>Technologies We Apply to Develop Logistics Software </h1> 
-                <p className='lead'>Cloudknod's IT experts in the fields of desktop, web, and mobile software engineering, apply cutting-edge technologies, elements, frameworks, and platforms to build Logistics software solutions with a solidly secured back-end and an adaptive modern design with great user experience.</p>
+                <h1 className='content-header fw-bold py-4'>Technologies We Apply to Develop Logistics Software </h1> 
+                <p className=''>Cloudknod's IT experts in the fields of desktop, web, and mobile software engineering, apply cutting-edge technologies, elements, frameworks, and platforms to build Logistics software solutions with a solidly secured back-end and an adaptive modern design with great user experience.</p>
                 <ForLogistics />
               </div>
           </div>

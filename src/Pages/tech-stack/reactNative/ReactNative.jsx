@@ -36,7 +36,7 @@ return (
       <div className='col androidBg-content'>
         <img src={Bg} alt="cloudknod Bg" />
           <div className="container bg-content">
-            <div className="androidBg-inner-content p-5">
+            <div className="androidBg-inner-content p-sm-5 p-2">
               <h1><span className='text-warning'>React Native </span> Development Services</h1>
             </div>
       
@@ -47,7 +47,7 @@ return (
 
     {/* content section 1*/}
     <div className="container">
-    <div className="row py-5 px-2 mt-3">
+    <div className="row py-sm-5 py-2 px-2 mt-3">
         <div className="col-sm-4 text">
             <p>We recognize the increasing demand for mobile applications that deliver a seamless and consistent experience across both iOS and Android platforms. Our React Native Development Services are designed to harness the power of this versatile framework, enabling us to create dynamic, cross-platform mobile applications that cater to a wide range of industries and needs.
              </p>
@@ -59,7 +59,7 @@ return (
           <div className="col-sm-4">
             <img src={ReactNativeImg} alt="android development" className='img-fluid'/>
           </div>
-          <div className="col-sm-4 text">
+          <div className="col-sm-4 text mt-sm-0 mt-3">
               
             <p>We are dedicated to delivering mobile applications that exceed your expectations. Our React Native Development Services combine cutting-edge technology with industry best practices to create powerful, scalable, and user-friendly solutions. Contact us today to discuss your project, and let's embark on a journey to transform your ideas into reality with React Native. </p>
           </div>
@@ -69,7 +69,7 @@ return (
 
       {/* content section 2 */}
       <section className='contentBg p-4'>
-        <div className="container py-5">
+        <div className="container py-sm-5 py-2">
           <div className="row">
             <div className="col ">
               <h1 className='content-header fw-bold py-4'>React Native Development Services <br/>We Offer</h1>
@@ -116,7 +116,7 @@ return (
         {/* content section 2 ends */}
 
         {/* content section 3*/}
-      <div className="container py-5">
+      <div className="container py-sm-5 py-2">
         <div className="row">
             <div className="col ">
               <h1 className='content-header fw-bold py-4'>Our Development Process </h1>
@@ -193,12 +193,12 @@ return (
 
          {/* Contact us */}
        {/* <section className='my-5'  > */}
-      <div className="container my-5 p-5 shadow" >
+      <div className="container my-sm-5 my-2 p-5 shadow" >
         <div className="row">
           <div className="col-sm-9 border-start border-warning development-header">
               <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
           </div>
-          <div className="col-sm ms-4 d-flex align-items-center ">
+          <div className="col-sm ms-5 d-flex align-items-center ">
             <Button variant="warning" onClick={handleShow}  className='request'>
               Request Service
           </Button> 
@@ -258,7 +258,7 @@ return (
                  </div>
 
                  <div className="mfooter">
-                     Customers who trust us...
+                    
                  </div>
              </div>     
          </div>

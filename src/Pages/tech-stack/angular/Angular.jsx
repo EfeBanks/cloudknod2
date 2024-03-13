@@ -20,6 +20,8 @@ import { useLocation } from 'react-router-dom';
 
 
 
+
+
 export default function Angular() {
     const [show, setShow] = useState(false);
 
@@ -35,7 +37,7 @@ export default function Angular() {
   }, [pathname]);
 
   return (
-    <div className='androidBg'>
+    <div>
        {/* Banner section */}
        <div className="row ">
         <div className='col androidBg-content'>
@@ -207,10 +209,12 @@ export default function Angular() {
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
-            <div className="col-sm ms-4 d-flex align-items-center ">
-              <Button variant="warning" onClick={handleShow}  className='request'>
-                Request Service
-            </Button> 
+            <div className="col-sm ms-5 d-flex align-items-center ">
+              
+                <Button variant="warning" onClick={handleShow}  className='request'>
+                  Request Service
+                </Button> 
+            
             </div>
 
            
@@ -269,7 +273,7 @@ export default function Angular() {
                     </div>
 
                     <div className="mfooter">
-                        Customers who trust us...
+                        
                     </div>
                 </div>     
             </div>

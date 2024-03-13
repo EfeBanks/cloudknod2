@@ -87,7 +87,7 @@ function Home() {
               <p className='border-end p-sm-4 p-2 at-cloudknod'>At CloudKnod, we understand that every business is unique, and so are their software requirements. Our custom software development services are designed to create tailored solutions that address your specific needs. Whether you need a web application, mobile app, desktop software, or any other software solution, our team is ready to bring your vision to life.</p>
             </div>
             <div className="col-sm-3 cloudknod-image">
-            <img src={BrandLogo} alt="cloudknod award" className='img-fluid' />
+            <img src={BrandLogo} alt="cloudknod award" className='img-fluid me-sm-0 me-4' style={{height:'200px', width:"200px"}} />
             </div>
         </div>
       </div>  
@@ -163,7 +163,9 @@ function Home() {
                 <h1 style={{ fontWeight:'bold'}} >Looking for Development Services?</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center">
+            <Link to='/Contact'>
               <button className='btn btn-warning contact-btn'>Contact Us</button>
+            </Link>
             </div>
           </div>
         </div>
@@ -235,7 +237,9 @@ function Home() {
             <div className="col-sm ">
                 <h1 className="consultation-header services-header">Get Free Consultation</h1>    
             <p>Discuss your project with our Experts and get a free quote.</p>
+            <Link to='/ContactForm'>
             <button className='btn btn-warning request'>Contact Us</button>
+            </Link>
             </div>
            
           </div>

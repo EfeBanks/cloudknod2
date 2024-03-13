@@ -21,7 +21,7 @@ export default function MobileDev() {
                         <li className='py-2'>130+ satisfied customers</li>
                     </ul>
                     <div className="col-sm d-flex align-items-center ">
-                    <Link to='/Mobile' className='mega-link'>
+                    <Link to='/MobileApp' className='mega-link'>
                         <button className='btn btn-warning request py-2 px-5 fw-bold'>Explore</button>
                     </Link>
                     </div>

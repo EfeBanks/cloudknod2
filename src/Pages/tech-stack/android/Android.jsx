@@ -16,6 +16,7 @@ import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 
 
@@ -34,7 +35,7 @@ export default function Android() {
    }, [pathname]);
 
   return (
-    <div className='androidBg'>
+    <div>
        {/* Banner section */}
        <div className="row ">
         <div className='col androidBg-content'>
@@ -51,7 +52,7 @@ export default function Android() {
 
       {/* content section 1*/}
       <div className="container">
-      <div className="row py-5 px-2 mt-3">
+      <div className="row py-sm-5 py-2 px-2 mt-3">
           <div className="col-sm-4 text">
               <p>We recognize that mobile applications are now at the forefront of digital engagement. To meet the growing demand for innovative and feature-rich Android applications, we proudly offer our Android Development Services. Leveraging the power of the Android platform, we bring your unique app ideas to life, providing a seamless user experience and staying ahead in the competitive mobile landscape. </p>
 
@@ -73,8 +74,8 @@ export default function Android() {
       {/* content section 1 ends */}
 
         {/* content section 2 */}
-        <section className='contentBg p-4'>
-          <div className="container py-5">
+        <section className='contentBg p-sm-4 p-2'>
+          <div className="container py-sm-5 py-2">
             <div className="row">
               <div className="col ">
                 <h1 className='content-header fw-bold py-sm-4 py-2'>Android App Development Services <br/>We Offer</h1>
@@ -121,7 +122,7 @@ export default function Android() {
           {/* content section 2 ends */}
 
           {/* content section 3*/}
-        <div className="container py-5">
+        <div className="container py-sm-5 py-2">
           <div className="row">
               <div className="col ">
                 <h1 className='content-header fw-bold py-sm-4 py-2'>Our Development Process </h1>
@@ -132,30 +133,30 @@ export default function Android() {
 
             {/* inner content */}
             <div className="row pt-4 pb-2">
-              <div className="col-sm me-2 hoverlay-container shadow">
+              <div className="col-sm me-sm-2 me-0 hoverlay-container shadow">
                 {/* <h2>Requirement Analysis</h2> */}
                 <img src={C1} alt="cloudknod" className='img-fluid hover-image' />
                 {/* <div className='front-text'><h2>Requirement Analysis</h2></div> */}
               
-                <div className="hoverlay text-center px-3">
+                <div className="hoverlay text-center px-sm-3 px-1">
                   <h4 className='pt-3'>Requirement Analysis</h4>
                   <p>We start every project with a thorough analysis of your specific requirements, objectives, and target audience. Understanding your unique needs is key to creating a tailored solution.</p>
                 </div>
               </div>
 
-              <div className="col-sm  me-2 hoverlay-container shadow">
+              <div className="col-sm  me-sm-2 me-0 hoverlay-container shadow">
                 <img src={C22} alt="cloudknod" className='img-fluid hover-image' />
               
-                <div className="hoverlay text-center px-3">
+                <div className="hoverlay text-center px-sm-3 px-1">
                   <h4 className='pt-3'>Design and Prototyping </h4>
                   <p>Our skilled design team creates wireframes and prototypes to visualize the user interface and user experience. This step ensures that the design aligns with your branding and user expectations. </p>
                 </div>
               </div>
 
-              <div className="col-sm me-2 hoverlay-container shadow">
+              <div className="col-sm me-sm-2 me-0 hoverlay-container shadow">
                 <img src={C3} alt="cloudknod" className='img-fluid hover-image' />
               
-                <div className="hoverlay text-center px-3">
+                <div className="hoverlay text-center px-sm-3 px-1">
                   <h4 className='pt-3'>Development</h4>
                   <p>Our experienced developers utilize industry best practices and the latest technologies to bring your vision to life. Clean, efficient code is at the core of all our development projects.</p>
                 </div>
@@ -164,28 +165,28 @@ export default function Android() {
 
           
             <div className="row pt-2 pb-4">
-              <div className="col-sm me-2 hoverlay-container shadow">
+              <div className="col-sm me-sm-2 me-0 hoverlay-container shadow">
                 <img src={C4} alt="cloudknod" className='img-fluid hover-image' />
               
-                <div className="hoverlay text-center px-3">
+                <div className="hoverlay text-center px-sm-3 px-1">
                   <h4 className='pt-3'>Testing and Quality Assurance</h4>
                   <p>We start every project with a thorough analysis of your specific requirements, objectives, and target audience. Understanding your unique needs is key to creating a tailored solution.</p>
                 </div>
               </div>
 
-              <div className="col-sm  me-2 hoverlay-container shadow">
+              <div className="col-sm  me-sm-2 me-0 hoverlay-container shadow">
                 <img src={C5} alt="cloudknod" className='img-fluid hover-image' />
               
-                <div className="hoverlay text-center px-3">
+                <div className="hoverlay text-center px-sm-3 px-1">
                   <h4 className='pt-3'>Deployment </h4>
                   <p>Our skilled design team creates wireframes and prototypes to visualize the user interface and user experience. This step ensures that the design aligns with your branding and user expectations. </p>
                 </div>
               </div>
 
-              <div className="col-sm me-2 hoverlay-container shadow">
+              <div className="col-sm me-sm-2 me-0 hoverlay-container shadow">
                 <img src={C6} alt="cloudknod" className='img-fluid hover-image' />
               
-                <div className="hoverlay text-center px-3">
+                <div className="hoverlay text-center px-sm-3 px-1">
                   <h4 className='pt-3'>Ongoing Support</h4>
                   <p>Our experienced developers utilize industry best practices and the latest technologies to bring your vision to life. Clean, efficient code is at the core of all our development projects.</p>
                 </div>
@@ -205,10 +206,12 @@ export default function Android() {
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
-            <div className="col-sm ms-4 d-flex align-items-center ">
+            <div className="col-sm ms-5 d-flex align-items-center ">
+            
               <Button variant="warning" onClick={handleShow}  className='request'>
                 Request Service
             </Button> 
+            
             </div>
           </div>
         </div>
@@ -265,7 +268,7 @@ export default function Android() {
                    </div>
 
                    <div className="mfooter">
-                       Customers who trust us...
+                      
                    </div>
                </div>     
            </div>
@@ -276,9 +279,9 @@ export default function Android() {
          <Button variant="warning" onClick={handleClose}>
            Submit
          </Button>
-         {/* <Button variant="secondary" onClick={handleClose}>
+         <Button variant="secondary" onClick={handleClose}>
            Close
-         </Button> */}
+         </Button>
         
        </Modal.Footer>
        </Modal>

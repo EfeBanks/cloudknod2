@@ -1,12 +1,12 @@
 import React from 'react'
 import Bg from '../../../images/bg2.jpg';
-import Button from 'react-bootstrap/Button'
-import Form from 'react-bootstrap/Form';
+import Consultation from '../../../Components/Consultation';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Dev1 from '../../../images/Dev1.jpg';
 import Dev2 from '../../../images/dev2.jpg';
-import Dev3 from '../../../images/dev3.jpg'
+import Dev3 from '../../../images/dev3.jpg';
+import { Link } from 'react-router-dom';
 
 
 
@@ -26,7 +26,7 @@ export default function Devops() {
         <div className='col androidBg-content'>
           <img src={Bg} alt="cloudknod Bg" />
             <div className="container bg-content">
-              <div className="androidBg-inner-content p-5">
+              <div className="androidBg-inner-content p-sm-5 p-2">
                 <h1 className="container"><span className='text-warning'> DevOps  </span>Services</h1>
               </div>
         
@@ -38,13 +38,13 @@ export default function Devops() {
       
       {/* Statistics */}
       <div className="containerSpecial consultationBg">
-        <div className="row py-5 mx-5">
+        <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
             <div className="col-sm-4">
-            <h2 className=' fw-bold py-4 mt-5'>Excellent quality and delivery with our IT Project Management Experts</h2>
+            <h2 className=' fw-bold py-4 mt-sm-5 mt-3'>Excellent quality and delivery with our DevOps Experts</h2>
             </div>
             <div className="col-sm-8 ps-2">
               
-            <div className="row py-4">
+            <div className="row py-sm-4 py-2">
 
               <div className="col-sm me-2 hoverlay-container">
                 <img src={Dev1} alt="cloudknod" className='img-fluid hover-image' />
@@ -81,7 +81,7 @@ export default function Devops() {
 
       {/* Cloudknod's Guarantee section */}
       <div className="containerSpecial advantageBg mt-3">
-          <div className="row py-5 mx-5">
+          <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
               <div className="col ">
                 <h1 className='content-header fw-bold py-4 px-3'>The Crucial Benefits of DevOps</h1>
                 
@@ -89,11 +89,11 @@ export default function Devops() {
           </div>
 
             {/* inner content */}
-            <div className="row pb-5 mx-5">
+            <div className="row pb-sm-5 pb-2 mx-sm-5 mx-2">
               <div className="col-sm-4 ">
               
                 <div className=" px-3">
-                  <h4 className='pt-3 fw-bold'> Quicker time-to-market </h4>
+                  <h4 className='pt-sm-3 pt-1 fw-bold'> Quicker time-to-market </h4>
                   <p>Better performance and greater cost-efficiency of your in-house corporate software development, tuning, and deployment processes;</p>
                   <p>Quicker and simpler implementation of upgrades and new features with seamless and continuous delivery of new versions and releases;</p>
                   <p>Boosted market and business potential of your growing and planned IT projects owing to higher levels of scalability.</p>
@@ -126,23 +126,25 @@ export default function Devops() {
 
       
       {/* Request Consultation */}
-      <section className='my-5' style={{color: '#fff'}} >
+      <section className='my-sm-5 my-3' style={{color: '#fff'}} >
         <div className="container p-5">
           <div className="row">
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Schedule a call to assess and discuss your DevOps development needs.</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center ">
-              <button className='btn btn-warning request p-3 fw-bold'>Request Consultation</button>
+              <Link to='/ContactForm'>
+                <button className='btn btn-warning request p-3 fw-bold'>Request Consultation</button>
+              </Link>
             </div>
           </div>
         </div>
         </section>
          {/* Request Consultation ends */}
 
-         {/* Expert PM section */}
+         {/* Expert Dev section */}
       <div className="containerSpecial advantageBg mt-3">
-          <div className="row py-5 mx-5">
+          <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
               <div className="col">
                 <h1 className='content-header fw-bold py-4 px-3'>The expertise we offer at our DevOps development company</h1>
                 
@@ -150,7 +152,7 @@ export default function Devops() {
           </div>
 
             {/* inner content */}
-            <div className="row pb-5 mx-5">
+            <div className="row pb-sm-5 pb-2 mx-sm-5 mx-2">
               <div className="col-sm-4 ">
                 <div className="p-4 gray-bg">                  
                   <h4 className='pt-3 fw-bold'> Monitoring </h4>
@@ -173,14 +175,14 @@ export default function Devops() {
                 
               </div>
 
-              <div className="col-sm-4 py-4 ">             
+              <div className="col-sm-4 py-sm-4 py-0 ">             
                 <div className="p-4 gray-bg">
                   <h4 className='pt-3 fw-bold'>Troubleshooting</h4>
                   <p>As a DevOps outsourcing company, we are quick to find and fix any errors in your code and infrastructure and assist your developers with avoiding potential issues.</p>
                 </div>
               </div>
 
-              <div className="col-sm-4 py-4">
+              <div className="col-sm-4 py-sm-4 py-0">
               <div className="p-4 gray-bg">
                 <h4 className='pt-3 fw-bold'>Continous Integration</h4>
                 <p> Organizing and automating the integration and deployment processes to accelerate the deployment timeline and improve product quality.</p>
@@ -188,7 +190,7 @@ export default function Devops() {
                 
               </div>
 
-              <div className="col-sm-4 py-4">
+              <div className="col-sm-4 py-sm-4 py-0">
               <div className="p-4 gray-bg">
                   <h4 className='pt-3 fw-bold'> Security  </h4>
                   <p>By helping you to introduce DevSecOps practices, we enable you to maintain reliable security development lifecycles, reduce costs, and increase safety.</p>
@@ -198,65 +200,13 @@ export default function Devops() {
 
              </div>
              </div>  
-      {/* Expert PM section ends*/}
+      {/* Expert Dev section ends*/}
 
 
 
-         {/* Consultation section */}
-         <div className="containerSpecial consultationBg">
-           <div className="row py-5 mt-3 mx-5 pe-2">
-              <div className="col-sm-5">
-                <h2 className=' fw-bold py-4'>Book a free consultation</h2>
-                <p className='fw-bold'>What happens next?</p>
-                <ol>
-                  <li>An expert contacts you after having analyzed your requirements;</li>
-                  <li>If needed, we sign an NDA to ensure the highest privacy level;</li>
-                  <li>We submit a comprehensive project proposal with estimates, timelines, CVs, etc.</li>
-                </ol>
-                <p className='fw-bold'>Customers who trust us</p>
-              </div>
-             
-
-              <div className="col-sm-7 formBg">
-              <Form className='mx-4 px-3 py-4'>
-              <Form.Label>Select your service</Form.Label>
-               <Form.Select aria-label="Default select example" className='borderless mb-4 mt-2'>
-                   <option value="1">Finance</option>
-                   <option value="2">Healthcare</option>
-                   <option value="3">Media</option>
-                   <option value="3">Logistics</option>
-                   <option value="3">Automotive</option>
-                   <option value="3">Others</option>
-               </Form.Select>
-               <Form.Group className="mb-4" controlId="formGroupUser" >
-                   {/* <Form.Label>Name</Form.Label> */}
-                   <Form.Control type="text" placeholder="Name" className='borderless' />
-               </Form.Group>
-               <Form.Group className="mb-4" controlId="formGroupEmail">
-                  
-                   <Form.Control type="email" placeholder="Corporate Email *" className='borderless' />
-               </Form.Group>
-               <Form.Group className="mb-4" controlId="formGroupPhone">
-                   
-                   <Form.Control type="text" placeholder="Phone *"  className='borderless'/>
-               </Form.Group>
-
-              <div className='mb-4'>
-                <input className="form-control form-control" id="formFile" type="file"  />
-              </div>
-
-              <div className="mb-4 ">
-                <label for="exampleFormControlTextarea1" class="form-label">We will call you ASAP or you can schedule a call</label>
-                <textarea className="form-control borderless" id="exampleFormControlTextarea1" rows="2" placeholder='Please describe your project requirement*'></textarea>
-              </div>
-
-              <Button type="submit" className='btn btn-warning btn-lg fw-bold'>Send Request</Button>
-               </Form>
-              </div>
-            </div>
-            </div>
+        {/* Consultation section */}
+         <Consultation />
         {/* Consultation section ends*/}
-
 
     </div>
   )

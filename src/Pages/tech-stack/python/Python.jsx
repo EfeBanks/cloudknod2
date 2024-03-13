@@ -37,7 +37,7 @@ return (
       <div className='col androidBg-content'>
         <img src={Bg} alt="cloudknod Bg" />
           <div className="container bg-content">
-            <div className="androidBg-inner-content p-5">
+            <div className="androidBg-inner-content p-sm-5 p-2">
               <h1> Work with Top <span className='text-warning'>Python </span>Developers</h1>
             </div>
       
@@ -48,7 +48,7 @@ return (
 
     {/* content section 1*/}
     <div className="container">
-    <div className="row py-5 px-2 mt-3">
+    <div className="row py-sm-5 py-2 px-2 mt-3">
         <div className="col-sm-4 text">
             <p>We understand that the digital landscape is constantly evolving, and businesses need robust software solutions to stay competitive. Cloudknod’s Python Development Outsourcing Service is your opportunity to develop web apps, big data soluions and AI-based IT solutions for different industries and with wide customization options. </p>
             
@@ -61,7 +61,7 @@ return (
           <div className="col-sm-4">
             <img src={PythonImg} alt="android development" className='img-fluid'/>
           </div>
-          <div className="col-sm-4 text">
+          <div className="col-sm-4 text mt-sm-0 mt-3">
 
           <p>We are dedicated to delivering software soluions that exceed your expectations. Our Python Development Services combine cutting-edge technology with industry best practices to create powerful, scalable, and user-friendly solutions. Contact us today to discuss your project, and let's embark on a journey to transform your ideas into reality. 
             </p>
@@ -73,8 +73,8 @@ return (
     {/* content section 1 ends */}
 
       {/* content section 2 */}
-      <section className='contentBg p-4'>
-        <div className="container py-5">
+      <section className='contentBg p-sm-4 p-2'>
+        <div className="container py-sm-5 py-2">
           <div className="row">
             <div className="col ">
               <h1 className='content-header fw-bold py-4'>Python Development Services <br/>We Offer</h1>
@@ -127,7 +127,7 @@ return (
         {/* content section 2 ends */}
 
         {/* content section 3*/}
-      <div className="container py-5">
+      <div className="container py-sm-5 py-2">
         <div className="row">
             <div className="col ">
               <h1 className='content-header fw-bold py-4'>Our Development Process </h1>
@@ -209,7 +209,7 @@ return (
           <div className="col-sm-9 border-start border-warning development-header">
               <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
           </div>
-          <div className="col-sm ms-4 d-flex align-items-center ">
+          <div className="col-sm ms-5 d-flex align-items-center ">
             <Button variant="warning" onClick={handleShow}  className='request'>
               Request Service
           </Button> 
@@ -269,7 +269,7 @@ return (
                  </div>
 
                  <div className="mfooter">
-                     Customers who trust us...
+                     
                  </div>
              </div>     
          </div>

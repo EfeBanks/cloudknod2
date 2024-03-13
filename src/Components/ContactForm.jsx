@@ -2,8 +2,19 @@ import React from 'react';
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form';
 import Bg from '../images/bg2.jpg';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 
 export default function ContactForm() {
+   // Extracts pathname property(key) from an object
+   const { pathname } = useLocation();
+
+   // Automatically scrolls to top whenever pathname changes
+   useEffect(() => {
+     window.scrollTo(0, 0);
+   }, [pathname]);
+   
   return (
     <div className='home-body'>
       {/* Banner section */}

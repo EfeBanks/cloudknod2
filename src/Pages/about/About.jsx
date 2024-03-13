@@ -8,6 +8,7 @@ import Consultation from '../../Components/Consultation';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Carousel from '../../Components/carousel/Carousel';
+import { Link } from 'react-router-dom';
 
 
 
@@ -26,7 +27,7 @@ export default function About() {
         <div className='col androidBg-content'>
           <img src={Bg} alt="cloudknod Bg" />
             <div className="container bg-content">
-              <div className="androidBg-inner-content p-5">
+              <div className="androidBg-inner-content p-sm-5 p-2">
                 <h1 className="container"><span className='text-warning'>Get to Know </span> Your Software Experts</h1>
               </div>
         
@@ -40,7 +41,7 @@ export default function About() {
         <div className="row align-items-center mx-sm-5 mx-2">
             <div className="col-sm-8 m-sm-4 p-sm-4 "  >
               {/* <h2 className='border-end p-4 fw-bold'>At CloudKnod, we empower businesses through innovation offering custom software development services tailored to meet specific needs through professional and efficient processes. </h2> */}
-              <h3 className='border-end p-4 fw-bold'>CloudKnod is a leading technology company that specializes in providing comprehensive software development and cloud services across a wide range of technology stacks. </h3>
+              <p className='border-end p-4 '>CloudKnod is a leading technology company that specializes in providing comprehensive software development and cloud services across a wide range of technology stacks. </p>
             </div>
             <div className="col-sm cloudknod-image">
             <img src={BrandLogo} alt="cloudknod award" className='img-fluid p-2' style={{height:'200px', width:"200px"}}/>
@@ -134,7 +135,9 @@ export default function About() {
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center ">
+            <Link to='/ContactForm'>
               <button className='btn btn-warning request p-3'>Request Services</button>
+            </Link>
             </div>
           </div>
         </div>

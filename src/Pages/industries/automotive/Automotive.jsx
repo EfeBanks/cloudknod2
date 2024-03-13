@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Consultation from '../../../Components/Consultation';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 
 export default function Automotive() {
@@ -82,9 +83,11 @@ export default function Automotive() {
             <div className="col-sm-9 pe-sm-5 pe-2 pb-sm-4 pb-2">
             <h2 className=' fw-bold pt-5 mt-sm-5 mt-2'>Whatever your software challenge is, our IT solution experts are ready to help you. Schedule a free online consultation. </h2>
     
-            <Button variant="warning" className='request slider-btn btn btn-lg mt-sm-4 mt-1'>
+            <Link to='/ContactForm'>
+              <Button variant="warning" className='request slider-btn btn btn-lg mt-sm-4 mt-1'>
                   Request Consultation
               </Button> 
+            </Link>
             </div>
         </div>
       </div>
@@ -147,7 +150,9 @@ export default function Automotive() {
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center ">
+            <Link to='/ContactForm'>
               <button className='btn btn-warning request p-2 btn btn-lg'>Request Services</button>
+            </Link>
             </div>
           </div>
         </div>

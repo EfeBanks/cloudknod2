@@ -16,7 +16,7 @@ export default function Consultation() {
                   <li>If needed, we sign an NDA to ensure the highest privacy level;</li>
                   <li>We submit a comprehensive project proposal with estimates, timelines, CVs, etc.</li>
                 </ol>
-                <p className='fw-bold'>Customers who trust us</p>
+                {/* <p className='fw-bold'>Customers who trust us</p> */}
               </div>
              
 

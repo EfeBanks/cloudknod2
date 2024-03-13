@@ -215,6 +215,10 @@ a.mega-link:active{
     border:none !important;
 }
 
+/* .menu-btn svg{
+    right: 24px !important;
+} */
+
 .menu-btn svg:active{
     color:#fff;
     border:none !important;

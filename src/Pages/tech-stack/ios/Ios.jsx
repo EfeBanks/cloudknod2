@@ -9,11 +9,18 @@ import C3 from '../../../images/c3.jpg';
 import C4 from '../../../images/c4.jpg';
 import C5 from '../../../images/c5.jpg';
 import C6 from '../../../images/c6.jpg';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import Modal from 'react-bootstrap/Modal';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 
 export default function Ios() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
    // Extracts pathname property(key) from an object
    const { pathname } = useLocation();
 
@@ -39,7 +46,7 @@ export default function Ios() {
 
       {/* content section 1*/}
       <div className="container">
-      <div className="row py-5 px-2 mt-3">
+      <div className="row py-sm-5 py-2 px-2 mt-3">
           <div className="col-sm-4 text">
               <p>In the ever-evolving landscape of mobile technology, iOS remains a premium platform that demands exceptional user experiences. We proudly offer iOS Development Services that are tailored to create captivating and high-performance iOS applications. Leveraging the power of Apple's ecosystem, we are here to turn your app vision into a reality that captivates users and meets your business objectives. 
                  </p>
@@ -52,7 +59,7 @@ export default function Ios() {
             <div className="col-sm-4">
               <img src={Ios3} alt="android development" className='img-fluid'/>
             </div>
-            <div className="col-sm-4 text">
+            <div className="col-sm-4 text mt-sm-0 mt-2">
               <p>We provide continuous support, updates, and optimization to keep your app secure and up-to-date.
               </p> 
               <p>We are dedicated to delivering iOS applications that not only meet but exceed your expectations. Our iOS Development Services combine creativity, innovation, and technical excellence to create powerful, user-centric mobile applications. Contact us today to discuss your project, and let's embark on a journey to turn your iOS app vision into a reality that resonates with users across the Apple ecosystem. 
@@ -65,10 +72,10 @@ export default function Ios() {
 
         {/* content section 2 */}
         <section className='contentBg p-4'>
-          <div className="container py-5">
+          <div className="container py-sm-5 py-2">
             <div className="row">
               <div className="col ">
-                <h1 className='content-header fw-bold py-4'>iOS App Development Services <br/>We Offer</h1>
+                <h1 className='content-header fw-bold py-sm-4 py-2'>iOS App Development Services <br/>We Offer</h1>
                 
               </div>
             </div>
@@ -112,7 +119,7 @@ export default function Ios() {
           {/* content section 2 ends */}
 
           {/* content section 3*/}
-        <div className="container py-5">
+        <div className="container py-sm-5 py-2">
           <div className="row">
               <div className="col ">
                 <h1 className='content-header fw-bold py-4'>Our Development Process </h1>
@@ -191,18 +198,93 @@ export default function Ios() {
 
            {/* Contact us */}
          {/* <section className='my-5'  > */}
-        <div className="container my-5 p-5 shadow" >
+        <div className="container my-sm-5 my-3 p-5 shadow" >
           <div className="row">
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
-            <div className="col-sm ms-4 d-flex align-items-center ">
-              <button className='btn btn-warning request'>Request Service</button>
+            <div className="col-sm ms-5 d-flex align-items-center ">
+              
+              <button className='btn btn-warning request' onClick={handleShow}>Request Service</button>
+              
             </div>
           </div>
         </div>
         {/* </section> */}
          {/* Contact us ends */}
+
+           {/* Modal Section */}
+
+      <>     
+     
+     <Modal show={show} onHide={handleClose} className='modal-xl'>
+        
+         <Modal.Header closeButton>
+         <Modal.Title>
+          <h2 style={{color: '#001019', paddingLeft: '20px'}}>Request Services
+          </h2> </Modal.Title>
+         </Modal.Header>
+         <Modal.Body>  
+         <div className="container"> 
+         <div className='row'>            
+         <div className='col-sm-7'>    
+             <Form>
+             <Form.Select aria-label="Default select example">
+                 <option>Select your Service *</option>
+                 <option value="1">Finance</option>
+                 <option value="2">Healthcare</option>
+                 <option value="3">Media</option>
+                 <option value="3">Logistics</option>
+             </Form.Select>
+             <Form.Group className="mb-3" controlId="formGroupUser">
+                 <Form.Label>Name</Form.Label>
+                 <Form.Control type="text" placeholder="Enter your name" />
+             </Form.Group>
+             <Form.Group className="mb-3" controlId="formGroupEmail">
+                 <Form.Label>Email address *</Form.Label>
+                 <Form.Control type="email" placeholder="Enter email" />
+             </Form.Group>
+             <Form.Group className="mb-3" controlId="formGroupPhone">
+                 <Form.Label>Phone Number *</Form.Label>
+                 <Form.Control type="text" placeholder="Phone Number" />
+             </Form.Group>
+             </Form>
+         </div>
+
+             <div className="col-sm-5 text-light" style={{backgroundColor: '#001019', padding:'30px'}}>
+                 <div className=''>
+                     <h5>Reach out to Cloudknod to receive a free consultation and entrust your IT initiative to a company of software experts.</h5>
+                 </div>
+
+                 <div className="mbody pt-4">
+                     <h5>Contact Us</h5>
+                     Phone: +01-66677455
+                     <br />Email: info@cloudknod.com
+                 </div>
+
+                 <div className="mfooter">
+                    
+                 </div>
+             </div>     
+         </div>
+         </div>
+             </Modal.Body> 
+
+     <Modal.Footer className='me-auto'>
+       <Button variant="warning" onClick={handleClose}>
+         Submit
+       </Button>
+       {/* <Button variant="secondary" onClick={handleClose}>
+         Close
+       </Button> */}
+      
+     </Modal.Footer>
+     </Modal>
+    
+   
+ </>
+       {/* Modal Section ends */}
+
     </div>
 
   )

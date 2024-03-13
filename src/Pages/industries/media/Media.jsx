@@ -9,6 +9,7 @@ import Consultation from '../../../Components/Consultation';
 import ForLogistics from '../../../Components/views/ForLogistics';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -20,6 +21,7 @@ export default function Media() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
   return (
     <div className='home-body'>
         {/* Banner section */}
@@ -160,7 +162,9 @@ export default function Media() {
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center ">
-              <button className='btn btn-warning request2 p-sm-3 p-1'>Request Services</button>
+              <Link to='/ContactForm'>
+                <button className='btn btn-warning request p-sm-3 p-1 ms-sm-0 ms-3'>Request Services</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -172,7 +176,7 @@ export default function Media() {
           <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
               <div className="col-sm ">
                 <h1 className='content-header fw-bold py-4'>Cloudknod’s tech stack for Media & Entertainment Software Development </h1> 
-                <p className='lead'>Benefit from highly experienced specialists in web and mobile development with a trusted Media & Entertainment software development company. Cloudknod employs the latest technologies, frameworks, and components to create solutions that combine a strong back-end with easy to use design.</p>
+                <p className=''>Benefit from highly experienced specialists in web and mobile development with a trusted Media & Entertainment software development company. Cloudknod employs the latest technologies, frameworks, and components to create solutions that combine a strong back-end with easy to use design.</p>
                 <ForLogistics />
               </div>
             </div>

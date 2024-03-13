@@ -35,6 +35,8 @@ export default function Media() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  
   return (
     <div className='home-body'>
         {/* Banner section */}

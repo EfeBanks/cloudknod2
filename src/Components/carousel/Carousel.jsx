@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import 'swiper/css';
 import './Carousel.css';
 
+
 register();
 const slider = [
     {
@@ -66,9 +67,11 @@ export default function Carousel() {
                 <h1 className='fw-bold fs-1'>Our Areas of Expertise</h1>
                 <hr/>
                 <p>We offer a wide range of services to meet all your company's needs.</p>
-                <Button variant="warning" className='request slider-btn'>
-                  Request Service
-              </Button> 
+                <Link to='/ContactForm'>
+                    <Button variant="warning" className='request slider-btn'>
+                        Request Service
+                    </Button> 
+                </Link>
             </div>
         </div>
         

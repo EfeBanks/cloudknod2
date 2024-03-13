@@ -8,6 +8,7 @@ import Mo2 from '../../../images/mo2.jpg';
 import Mo3 from '../../../images/mo3.jpg';
 import Eflight from '../../../images/telecomApp.jpg'
 import Ecomm from '../../../images/ecom.png';
+import { Link } from 'react-router-dom';
 
 
 export default function Services() {
@@ -19,6 +20,7 @@ export default function Services() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
   return (
     <div className='home-body'>
         {/* Banner section */}
@@ -222,7 +224,9 @@ export default function Services() {
                 <h1 style={{ fontWeight:'bold'}} >Discover our innovation-driven expertise and cost-effective App Development Services.</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center ">
-              <button className='btn btn-warning request p-sm-3 p-1'>Request Consultation</button>
+              <Link to='/ContactForm'>
+                <button className='btn btn-warning request p-sm-3 p-1'>Request Consultation</button>
+              </Link>
             </div>
           </div>
         </div>

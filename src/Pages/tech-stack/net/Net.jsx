@@ -30,13 +30,13 @@ export default function Java() {
   }, [pathname]);
   
     return (
-      <div className='androidBg'>
+      <div>
          {/* Banner section */}
          <div className="row ">
           <div className='col androidBg-content'>
             <img src={Bg} alt="cloudknod Bg" />
               <div className="container bg-content">
-                <div className="androidBg-inner-content p-5">
+                <div className="androidBg-inner-content p-sm-5 p-2">
                   <h1><span className='text-warning'>.Net </span> Development Services</h1>
                 </div>
           
@@ -47,7 +47,7 @@ export default function Java() {
   
         {/* content section 1*/}
         <div className="container">
-        <div className="row py-5 px-2 mt-3">
+        <div className="row py-sm-5 py-2 px-2 mt-3">
             <div className="col-sm-4 text">
                 <p>In the realm of software development, Microsoft's .NET framework stands as a versatile and powerful platform that has consistently delivered robust applications across various domains. We offer .NET Development Services designed to harness the full potential of this technology stack. Our team of expert .NET developers is ready to turn your ideas into scalable, secure, and high-performance applications. 
                  </p>
@@ -58,7 +58,7 @@ export default function Java() {
               <div className="col-sm-4">
                 <img src={NetImg} alt="android development" className='img-fluid'/>
               </div>
-              <div className="col-sm-4 text">
+              <div className="col-sm-4 text mt-sm-0 mt-3">
                 <p>Our .NET development team possesses a wealth of experience in creating diverse software solutions. Whether you require a custom .NET application, seek to enhance an 
                 existing system, or need assistance with .NET migration, we have the expertise to deliver.
                 </p>   
@@ -70,10 +70,10 @@ export default function Java() {
   
           {/* content section 2 */}
           <section className='contentBg p-4'>
-            <div className="container py-5">
+            <div className="container py-sm-5 py-2">
               <div className="row">
                 <div className="col ">
-                  <h1 className='content-header fw-bold py-4'>.Net Development Services <br/>We Offer</h1>
+                  <h1 className='content-header fw-bold py-sm-4 py-2'>.Net Development Services <br/>We Offer</h1>
                   
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function Java() {
             {/* content section 2 ends */}
   
             {/* content section 3*/}
-          <div className="container py-5">
+          <div className="container py-sm-5 py-2">
             <div className="row">
                 <div className="col ">
                   <h1 className='content-header fw-bold py-4'>Our Development Process </h1>
@@ -127,7 +127,7 @@ export default function Java() {
               </div>
   
               {/* inner content */}
-              <div className="row pt-4 pb-2">
+              <div className="row pt-sm-4 pt-2 pb-2">
                 <div className="col-sm me-2 hoverlay-container shadow">
                   {/* <h2>Requirement Analysis</h2> */}
                   <img src={C1} alt="cloudknod" className='img-fluid hover-image' />
@@ -201,7 +201,7 @@ export default function Java() {
               <div className="col-sm-9 border-start border-warning development-header">
                   <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
               </div>
-              <div className="col-sm ms-4 d-flex align-items-center ">
+              <div className="col-sm ms-5 d-flex align-items-center ">
                 <Button variant="warning" onClick={handleShow}  className='request'>
                   Request Service
               </Button> 
@@ -261,7 +261,7 @@ export default function Java() {
                      </div>
   
                      <div className="mfooter">
-                         Customers who trust us...
+                         {/* Customers who trust us... */}
                      </div>
                  </div>     
              </div>
@@ -272,9 +272,9 @@ export default function Java() {
            <Button variant="warning" onClick={handleClose}>
              Submit
            </Button>
-           {/* <Button variant="secondary" onClick={handleClose}>
+           <Button variant="secondary" onClick={handleClose}>
              Close
-           </Button> */}
+           </Button>
           
          </Modal.Footer>
          </Modal>

@@ -9,6 +9,7 @@ import Consultation from '../../../Components/Consultation';
 import ForLogistics from '../../../Components/views/ForLogistics';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 export default function Telecom() {
@@ -37,7 +38,7 @@ export default function Telecom() {
 
       {/* Statistics */}
       <div className="containerSpecial consultationBg">
-        <div className="row py-5 mx-sm-5 mx-2">
+        <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
             <div className="col-sm-4">
             <h2 className=' fw-bold py-sm-4 py-2 mt-sm-5 mt-2'>Accelerate your Connectivity with our Telecom Expertise </h2>
             </div>
@@ -84,11 +85,13 @@ export default function Telecom() {
       <div className="containerSpecial consultationBg mt-3">
         <div className="row py-sm-4 py-2 pb-5 ms-sm-5 ms-2">
             <div className="col-sm-7 pe-5 pb-4">
-            <h2 className=' fw-bold pt-5 mt-5'>IT projects delivered by Cloudknod for Telecom  </h2>
+            <h2 className=' fw-bold pt-sm-5 pt-2 mt-sm-5 mt-2'>IT projects delivered by Cloudknod for Telecom  </h2>
             <p>Cloudknod is a custom software development provider of choice for many Telecom companies hence, have implemented multiple tech initiatives for the telecom industry.</p>
-            <Button variant="warning" className='request slider-btn btn btn-lg '>
+            <Link to='/ContactForm'>
+              <Button variant="warning" className='request slider-btn btn btn-lg '>
                   Request Service
               </Button> 
+            </Link>
             </div>
             <div className="col-sm-5 ">
                 <img src={TelecomApp} alt="cloudknod" className='img-fluid' />
@@ -105,7 +108,7 @@ export default function Telecom() {
           <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
               <div className="col-sm ">
                 <h1 className='content-header fw-bold py-sm-4 py-2'>Cloudknod's expertise in building telecom solutions </h1> 
-                <p className='lead'>Cloudknod's telecom development team can apply state-of-the-art telecom software, the latest frameworks, most effective cloud computing infrastructures and platforms, big data tools, and databases to match your goals.</p>
+                <p className=''>Cloudknod's telecom development team can apply state-of-the-art telecom software, the latest frameworks, most effective cloud computing infrastructures and platforms, big data tools, and databases to match your goals.</p>
                 <ForLogistics />
               </div>
           </div>
@@ -123,7 +126,9 @@ export default function Telecom() {
                 <h1 style={{ fontWeight:'bold'}} >Schedule a call to assess and discuss your IT project</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center ">
+            <Link to='/ContactForm'>
               <button className='btn btn-warning request1 p-2'>Request Consultation</button>
+            </Link>
             </div>
           </div>
         </div>

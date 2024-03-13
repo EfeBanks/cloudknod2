@@ -9,6 +9,7 @@ import MusicSite from '../../images/music-site.jpg';
 import MusicSite2 from '../../images/music-site2.jpg';
 import Carousel from '../../Components/carousel/Carousel';
 import Consultation from '../../Components/Consultation';
+import { Link } from 'react-router-dom';
 // import FrontendDev from '../../Components/views2/FrontendDev';
 // import BackendDev from '../../Components/views2/BackendDev';
 // import MobileDev from '../../Components/views2/MobileDev';
@@ -41,6 +42,8 @@ export default function FrontendWeb() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+
   return (
     <div className='home-body'>
         {/* Banner section */}
@@ -168,7 +171,9 @@ export default function FrontendWeb() {
                 <h1 style={{ fontWeight:'bold'}} >Collaborate with Cloudknod to apply the latest Front-end Development technologies to carry out your software initiative.</h1>
             </div>
             <div className="col-sm ms-4 d-flex align-items-center ">
+            <Link to='/ContactForm'>
               <button className='btn btn-warning request p-3 fw-bold'>Request Consultation</button>
+            </Link>
             </div>
           </div>
         </div>

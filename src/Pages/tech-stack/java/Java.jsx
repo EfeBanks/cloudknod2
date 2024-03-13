@@ -31,7 +31,7 @@ export default function Java() {
   }, [pathname]);
   
     return (
-      <div className='androidBg'>
+      <div>
          {/* Banner section */}
          <div className="row ">
           <div className='col androidBg-content'>
@@ -48,7 +48,7 @@ export default function Java() {
   
         {/* content section 1*/}
         <div className="container">
-        <div className="row py-5 px-2 mt-3">
+        <div className="row py-sm-5 py-2 px-2 mt-3">
             <div className="col-sm-4 text">
                 <p>In the ever-evolving world of software development, Java remains a powerhouse, powering a wide array of applications, from enterprise-level systems to mobile and web solutions. We offer Java Development Services that are tailored to harness the full potential of this versatile and reliable programming language. Our expert Java developers are ready to transform your ideas into robust, scalable, and highperformance applications.  </p>
   
@@ -58,7 +58,7 @@ export default function Java() {
               <div className="col-sm-4">
                 <img src={JavaImg} alt="android development" className='img-fluid'/>
               </div>
-              <div className="col-sm-4 text">
+              <div className="col-sm-4 text mt-sm-0 mt-3">
                 <p>Our Java development team is well-versed in creating a variety of software solutions. Whether you need a custom Java application, want to enhance an existing system, or require migration to Java, we have the expertise to deliver. 
                 </p>   
                 <p>We are dedicated to delivering Java applications that exceed your expectations. Our Java Development Services combine the power of Java with industry best practices to create powerful, scalable, and reliable solutions. Contact us today to discuss your project, and let's embark on a journey to turn your ideas into reality with Java. </p>
@@ -69,10 +69,10 @@ export default function Java() {
   
           {/* content section 2 */}
           <section className='contentBg p-4'>
-            <div className="container py-5">
+            <div className="container py-sm-5 py-2">
               <div className="row">
                 <div className="col ">
-                  <h1 className='content-header fw-bold py-4'>Java App Development Services <br/>We Offer</h1>
+                  <h1 className='content-header fw-bold py-sm-4 py-2'>Java App Development Services <br/>We Offer</h1>
                   
                 </div>
               </div>
@@ -116,17 +116,17 @@ export default function Java() {
             {/* content section 2 ends */}
   
             {/* content section 3*/}
-          <div className="container py-5">
+          <div className="container py-sm-5 py-2">
             <div className="row">
                 <div className="col ">
-                  <h1 className='content-header fw-bold py-4'>Our Development Process </h1>
+                  <h1 className='content-header fw-bold py-sm-4 py-2'>Our Development Process </h1>
                   <p>We follow a well-defined development process that ensures the success of your projects. This standardized approach guarantees consistency and quality, regardless of the service you choose. </p>
                   
                 </div>
               </div>
   
               {/* inner content */}
-              <div className="row pt-4 pb-2">
+              <div className="row pt-sm-4 pt-2 pb-2">
                 <div className="col-sm me-2 hoverlay-container shadow">
                   {/* <h2>Requirement Analysis</h2> */}
                   <img src={C1} alt="cloudknod" className='img-fluid hover-image' />
@@ -200,7 +200,7 @@ export default function Java() {
               <div className="col-sm-9 border-start border-warning development-header">
                   <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
               </div>
-              <div className="col-sm ms-4 d-flex align-items-center ">
+              <div className="col-sm ms-5 d-flex align-items-center ">
                 <Button variant="warning" onClick={handleShow}  className='request'>
                   Request Service
               </Button> 
@@ -260,7 +260,7 @@ export default function Java() {
                      </div>
   
                      <div className="mfooter">
-                         Customers who trust us...
+                        
                      </div>
                  </div>     
              </div>
@@ -271,9 +271,9 @@ export default function Java() {
            <Button variant="warning" onClick={handleClose}>
              Submit
            </Button>
-           {/* <Button variant="secondary" onClick={handleClose}>
+           <Button variant="secondary" onClick={handleClose}>
              Close
-           </Button> */}
+           </Button>
           
          </Modal.Footer>
          </Modal>
