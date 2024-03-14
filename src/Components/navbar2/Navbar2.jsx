@@ -9,7 +9,7 @@ import BrandLogo from '../../images/cloudknod-logo.png';
 export default function NavigationBar2({menuOpen, setMenuOpen}) {
     const [color, setColor] = useState(false);
     const changeColor =() =>{
-      if(window.scrollY >= 120){
+      if(window.scrollY >= 110){
         setColor(true)
       }
       else{

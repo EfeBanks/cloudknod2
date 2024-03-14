@@ -76,8 +76,7 @@ export default function SolutionArchitecture() {
       </div>
 
       {/* Statistics ends */}
-
-      
+ 
 
       {/* IT Architecture Roles section */}
       <div className="containerSpecial advantageBg mt-3">

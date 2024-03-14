@@ -215,9 +215,6 @@ a.mega-link:active{
     border:none !important;
 }
 
-/* .menu-btn svg{
-    right: 24px !important;
-} */
 
 .menu-btn svg:active{
     color:#fff;
@@ -352,6 +349,7 @@ a.mega-link:active{
     .nav-links li .nav-link:hover{
         border-bottom:none !important;      
     }
+
 
     .mega-container .mega-content {
         background-color: #fff ;

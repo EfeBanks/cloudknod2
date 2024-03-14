@@ -2,11 +2,16 @@ import React from 'react'
 import Bg from '../../../images/cloudBg.jpg';
 import Consultation from '../../../Components/Consultation';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import Clo1 from '../../../images/clo1.jpg';
 import Clo2 from '../../../images/clo2.jpg';
 import A3 from '../../../images/a3.jpg';
-import { Link } from 'react-router-dom';
+import Clw1 from '../../../images/clw1.jpg';
+import Clw2 from '../../../images/clw2.jpg';
+import Clw3 from '../../../images/clw3.jpg';
+import Clw4 from '../../../images/clw4.jpg';
+import Clw5 from '../../../images/clw5.jpg';
+import Clw6 from '../../../images/clw6.jpg';
 
 
 
@@ -77,6 +82,138 @@ export default function CloudDevelopment() {
       </div>
 
       {/* Statistics ends */}
+
+      {/* IT Architecture Roles section */}
+      <div className="containerSpecial advantageBg mt-3">
+          <div className="row pt-sm-5 pt-2 mx-sm-5 mx-2">
+              <div className="col ">
+                <h1 className='content-header fw-bold py-sm-4 py-2 px-sm-3 px-1'>Cloud Application Services</h1>
+  
+              </div>
+          </div>
+
+            {/* inner content */}
+            <div className="row pb-sm-5 pb-2 mx-sm-5 mx-2">
+              <div className="col-sm-4 ">
+              
+                <div className="px-sm-3 px-1">
+                  <h4 className='pt-3 fw-bold'> Development </h4>
+                  <p>Build and run your serverless application to obtain greater capacity and flexibility:</p>
+                  <ul style={{lineHeight:'2.5rem'}}>
+                    <li>IaaS/SaaS/PaaS;</li>
+                    <li>Big Data;</li>
+                    <li>AI/ML;</li>
+                    <li>IoT;</li>
+                    <li>Multicloud.</li>
+                  </ul>
+
+                  </div>
+              </div>
+
+              <div className="col-sm-4">
+              
+                <div className="px-sm-3 px-1">
+                <h4 className='pt-3 fw-bold'> Migration </h4>
+                <p>Cloudknod determines and implements the best migration strategy to conduct a transition to the cloud:</p>
+                  <ul style={{lineHeight:'2.5rem'}}>
+                    <li>Security strategy creation;</li>
+                    <li>Large databases migration;</li>
+                    <li>Application re-hosting;</li>
+                    <li>Application re-architecting.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="col-sm-4">
+              
+                <div className="px-sm-3 px-1">
+                <h4 className='pt-3 fw-bold'> Support and optimization </h4>
+                <p>To reduce overall cloud expenses, we evaluate your existing cloud infrastructure and identify overprovisioning or under-utilized resources:</p>
+                  <ul style={{lineHeight:'2.5rem'}}>
+                    <li>Architecture audit;</li>
+                    <li>Security audit;</li>
+                    <li>Cost optimization;</li>
+                    <li>Legacy infrastructure upgrade.</li>
+                  </ul>
+                </div>
+              </div>
+
+             </div>
+             </div>  
+      {/* IT Architecture Roles ends*/}
+
+      
+       {/* What we do */}
+       <div className="containerSpecial consultationBg mt-3">
+          <div className="row py-sm-5 py-2 mx-sm-5 mx-2">
+              <div className="col ">
+                <h1 className='content-header fw-bold py-4 px-3'>What We Do </h1>
+                
+              </div>
+            </div>
+
+            {/* inner content */}
+            <div className="row pt-4 pb-2">
+              <div className="col-sm me-2 hoverlay-container shadow">
+                <img src={Clw2} alt="cloudknod" className='img-fluid hover-image' />            
+                <div className="hoverlay text-center px-3">
+                  <h4 className='pt-3'>Cloud Hybrid Development</h4>
+                  <p>Cloud engineers combine public clouds, private clouds, and on-premises resources to achieve the agility required for a competitive advantage.</p>
+                </div>
+              </div>
+
+              <div className="col-sm  me-2 hoverlay-container shadow">
+                <img src={Clw3} alt="cloudknod" className='img-fluid hover-image' />         
+                <div className="hoverlay text-center px-3">
+                  <h4 className='pt-3'>Cloud Migration</h4>
+                  <p>Cloudknod will help your business migrate from on-premises infrastructure to the cloud, ensuring security, flexibility, and confidentiality of your data. </p>
+                </div>
+              </div>
+
+              <div className="col-sm me-2 hoverlay-container shadow">
+                <img src={Clw1} alt="cloudknod" className='img-fluid hover-image' />
+              
+                <div className="hoverlay text-center px-3">
+                  <h4 className='pt-3'>Cloud Native Development</h4>
+                  <p>Cloudknod's experts optimize project workloads, govern usage of existing cloud resources, build microservices, devise behavior-driven design, etc. </p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div className="row pt-2 pb-5">
+              <div className="col-sm me-2 hoverlay-container shadow">
+                <img src={Clw5} alt="cloudknod" className='img-fluid hover-image' />
+              
+                <div className="hoverlay text-center px-3">
+                  <h4 className='pt-3'>Application Re-architecting</h4>
+                  <p>Cloudknod provides a sophisticated approach to re-architecting processes and applications by using service-oriented or serverless architectures.</p>
+                </div>
+              </div>
+
+              <div className="col-sm  me-2 hoverlay-container shadow">
+                <img src={Clw6} alt="cloudknod" className='img-fluid hover-image' />
+              
+                <div className="hoverlay text-center px-3">
+                  <h4 className='pt-3'>Cloud Consulting </h4>
+                  <p>Cloudknod's engineers organize business transformations with innovative cloud applications and provide detailed advice at every stage of the transition. </p>
+                </div>
+              </div>
+
+              <div className="col-sm me-2 hoverlay-container shadow">
+                <img src={Clw4} alt="cloudknod" className='img-fluid hover-image' />
+              
+                <div className="hoverlay text-center px-3">
+                  <h4 className='pt-3'>SaaS/PaaS/IaaS</h4>
+                  <p>Experts work with SaaS, PaaS, and IaaS, allowing you to save on equipment and protect your confidential information from hacking and stealing.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* inner content ends*/}
+          </div>
+
+      {/* What we do ends */}
 
 
       {/* Cloudknod's Guarantee section */}
