@@ -54,7 +54,7 @@ export default function About() {
       <div className="containerSpecial advantageBg mt-3 pb-4">
           <div className="row py-5 mx-sm-5 mx-2">
               <div className="col ">
-                <h1 className='content-header fw-bold py-4 pb-2'>Get to Know Us</h1> 
+                <h1 className='content-header fw-bold py-sm-4 py-2 pb-2'>Get to Know Us</h1> 
               </div>
           </div>
 
@@ -134,9 +134,9 @@ export default function About() {
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
-            <div className="col-sm ms-4 d-flex align-items-center ">
+            <div className="col-sm text-center ">
             <Link to='/ContactForm'>
-              <button className='btn btn-warning request p-3'>Request Services</button>
+              <button className='btn btn-warning request p-sm-3 p-2'>Request Services</button>
             </Link>
             </div>
           </div>

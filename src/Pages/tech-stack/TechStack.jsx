@@ -2,10 +2,11 @@ import React from 'react'
 import Bg from '../../images/techstack2.jpg';
 import Consultation from '../../Components/Consultation';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import FrontendDev from '../../Components/views2/FrontendDev';
 import BackendDev from '../../Components/views2/BackendDev';
 import MobileDev from '../../Components/views2/MobileDev';
+
 
 
 
@@ -84,16 +85,18 @@ export default function Media() {
       </div>
 
       {/* Techstack section ends */}
-      
-            {/* Request Consultation */}
-            <section className='my-5' style={{color: '#fff'}} >
+
+         {/* Request Consultation */}
+      <section className='my-5' style={{color: '#fff'}} >
         <div className="container p-5">
           <div className="row">
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
-            <div className="col-sm ms-4 d-flex align-items-center ">
-              <button className='btn btn-warning request2 p-sm-3 p-2 fw-bold'>Request Services</button>
+            <div className="col-sm text-center ">
+              <Link to='/ContactForm'>
+                <button className='btn btn-warning request p-sm-3 p-2'>Request Services</button>
+              </Link>
             </div>
           </div>
         </div>

@@ -60,7 +60,7 @@ return (
           <div className="col-sm-4">
             <img src={ReactNativeImg} alt="android development" className='img-fluid'/>
           </div>
-          <div className="col-sm-4 text">
+          <div className="col-sm-4 text mt-sm-0 mt-3">
 
           <p>We are dedicated to delivering web applications that exceed your expectations. Our React Development Services combine cutting-edge technology with industry best practices to create powerful, scalable, and user-friendly solutions. Contact us today to discuss your project, and let's embark on a journey to transform your ideas into reality. 
             </p>
@@ -201,7 +201,7 @@ return (
           <div className="col-sm-9 border-start border-warning development-header">
               <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
           </div>
-          <div className="col-sm ms-5 d-flex align-items-center ">
+          <div className="col-sm text-center">
             <Button variant="warning" onClick={handleShow}  className='request'>
               Request Service
           </Button> 

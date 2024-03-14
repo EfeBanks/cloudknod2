@@ -230,9 +230,9 @@ export default function CustomSoftware() {
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Select professional Custom Software Services to match your technology and business goals.</h1>
             </div>
-            <div className="col-sm ms-sm-4 ms-2 d-flex align-items-center ">
+            <div className="col-sm text-center ">
             <Link to='/ContactForm'>
-              <button className='btn btn-warning request p-sm-3 p-2 ms-sm-0 ms-4'>Request Service</button>
+              <button className='btn btn-warning request p-sm-3 p-2'>Request Service</button>
             </Link>
             </div>
           </div>

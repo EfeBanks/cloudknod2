@@ -21,6 +21,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Consultation from '../../Components/Consultation';
+import PictureBg from '../../images/mobileBg.jpg';
 
 
 
@@ -62,7 +63,7 @@ function Home() {
       <div className="row">
         <div className='col videoBg'>
             <video src={home2} autoPlay loop muted />
-            {/* <img src={PictureBg} alt="cloudknod bg" className='hide-pic'/> */}
+            <img src={PictureBg} alt="cloudknod bg" className='hide-show-pix img-fluid'/>
             <div className="container bg-content">
               <div className="bg-inner-content mt-sm-5 mt-2 p-sm-5 p-4">
                 <h1>Empowering Business Through Innovation</h1>
@@ -71,7 +72,7 @@ function Home() {
                     <span className='bg-button btn btn-warning ms-sm-5 ms-3'>Let's discuss your project now</span>
                   </Link>
                  
-                  </div>
+                </div>
               </div>
               <div className="bg-inner-content"></div>
         
@@ -162,9 +163,9 @@ function Home() {
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Looking for Development Services?</h1>
             </div>
-            <div className="col-sm ms-4 d-flex align-items-center">
+            <div className="col-sm text-center">
             <Link to='/Contact'>
-              <button className='btn btn-warning contact-btn'>Contact Us</button>
+              <button className='btn btn-warning request' >Contact Us</button>
             </Link>
             </div>
           </div>

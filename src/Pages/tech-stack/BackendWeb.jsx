@@ -118,9 +118,9 @@ export default function BackendWeb() {
 
             Collaborate with Cloudknod to apply the latest Back-end Development technologies to carry out your software initiative.</h1>
             </div>
-            <div className="col-sm ms-4 d-flex align-items-center ">
+            <div className="col-sm text-center ">
             <Link to='/ContactForm'>
-              <button className='btn btn-warning request p-sm-3 fw-bold'>Request Consultation</button>
+              <button className='btn btn-warning request p-sm-3 p-2'>Request Consultation</button>
             </Link>
             </div>
           </div>

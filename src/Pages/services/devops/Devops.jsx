@@ -132,9 +132,9 @@ export default function Devops() {
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Schedule a call to assess and discuss your DevOps development needs.</h1>
             </div>
-            <div className="col-sm ms-4 d-flex align-items-center ">
+            <div className="col-sm text-center ">
               <Link to='/ContactForm'>
-                <button className='btn btn-warning request p-3 fw-bold'>Request Consultation</button>
+                <button className='btn btn-warning request p-sm-3 p-2'>Request Consultation</button>
               </Link>
             </div>
           </div>

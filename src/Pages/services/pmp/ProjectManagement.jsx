@@ -189,7 +189,7 @@ export default function ProjectManagement() {
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
-            <div className="col-sm ms-5 d-flex align-items-center ">
+            <div className="col-sm text-center ">
             <Link to='/ContactForm'>
               <button className='btn btn-warning request p-sm-3 p-2'>Request Services</button>
             </Link>

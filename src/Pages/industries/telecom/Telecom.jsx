@@ -125,7 +125,7 @@ export default function Telecom() {
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Schedule a call to assess and discuss your IT project</h1>
             </div>
-            <div className="col-sm ms-4 d-flex align-items-center ">
+            <div className="col-sm text-center ">
             <Link to='/ContactForm'>
               <button className='btn btn-warning request1 p-2'>Request Consultation</button>
             </Link>

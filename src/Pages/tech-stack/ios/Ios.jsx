@@ -59,7 +59,7 @@ export default function Ios() {
             <div className="col-sm-4">
               <img src={Ios3} alt="android development" className='img-fluid'/>
             </div>
-            <div className="col-sm-4 text mt-sm-0 mt-2">
+            <div className="col-sm-4 text mt-sm-0 mt-3">
               <p>We provide continuous support, updates, and optimization to keep your app secure and up-to-date.
               </p> 
               <p>We are dedicated to delivering iOS applications that not only meet but exceed your expectations. Our iOS Development Services combine creativity, innovation, and technical excellence to create powerful, user-centric mobile applications. Contact us today to discuss your project, and let's embark on a journey to turn your iOS app vision into a reality that resonates with users across the Apple ecosystem. 
@@ -203,7 +203,7 @@ export default function Ios() {
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
-            <div className="col-sm ms-5 d-flex align-items-center ">
+            <div className="col-sm text-center ">
               
               <button className='btn btn-warning request' onClick={handleShow}>Request Service</button>
               
@@ -274,9 +274,9 @@ export default function Ios() {
        <Button variant="warning" onClick={handleClose}>
          Submit
        </Button>
-       {/* <Button variant="secondary" onClick={handleClose}>
+       <Button variant="secondary" onClick={handleClose}>
          Close
-       </Button> */}
+       </Button>
       
      </Modal.Footer>
      </Modal>

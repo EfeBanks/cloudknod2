@@ -126,9 +126,9 @@ export default function UiUxDesign() {
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Select professional Design Services for your software project.</h1>
             </div>
-            <div className="col-sm ms-4 d-flex align-items-center ">
+            <div className="col-sm text-center ">
             <Link to='/ContactForm'>
-              <button className='btn btn-warning request p-sm-3 p-2 ms-sm-0 ms-4'>Request Services</button>
+              <button className='btn btn-warning request p-sm-3 p-2'>Request Services</button>
             </Link>
             </div>
           </div>

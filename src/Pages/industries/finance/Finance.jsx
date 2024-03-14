@@ -88,7 +88,7 @@ export default function Finance() {
             <h2 className=' fw-bold pt-sm-5 pt-2 mt-sm-5 mt-2'>Cloudknod's Digital Banking App for Financial Service Companies </h2>
             <p>See the advantages offered by our white-label digital wallet and mobile banking app for traditional banks and FinTech service providers.</p>
             <Link to='/ContactForm'>
-                <Button variant="warning" className='request slider-btn btn btn-lg '>
+                <Button variant="warning" className='request slider-btn'>
                     Request Service
                 </Button>
             </Link> 
@@ -156,9 +156,9 @@ export default function Finance() {
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
-            <div className="col-sm ms-4 d-flex align-items-center ">
+            <div className="col-sm text-center ">
             <Link to='/ContactForm'>
-              <button className='btn btn-warning request p-sm-3 p-2 ms-sm-0 ms-5'>Request Services</button>
+              <button className='btn btn-warning request p-sm-3 p-2'>Request Services</button>
             </Link>
             </div>
           </div>

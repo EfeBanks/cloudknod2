@@ -86,7 +86,7 @@ export default function Healthcare() {
             <h2 className=' fw-bold pt-sm-5 pt-2 mt-sm-5 mt-2'>Cloudknod's Custom TeleHealth Application </h2>
             <p>Reduce your time to market with our Professional Custom TeleHealth App Development Services.</p>
             <Link to='/ContactForm'>
-              <Button variant="warning" className='request slider-btn btn btn-lg ms-sm-0 ms-1'>
+              <Button variant="warning" className='request slider-btn'>
                   Request Service
               </Button> 
             </Link>
@@ -172,7 +172,7 @@ export default function Healthcare() {
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Entrust your IT initiatives to our Tech Experts</h1>
             </div>
-            <div className="col-sm ms-4 d-flex align-items-center ">
+            <div className="col-sm text-center ">
             <Link to='/ContactForm'>
               <button className='btn btn-warning request p-2'>Request Consultation</button>
             </Link>

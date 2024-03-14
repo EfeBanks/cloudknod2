@@ -209,7 +209,7 @@ export default function Angular() {
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
             </div>
-            <div className="col-sm ms-5 d-flex align-items-center ">
+            <div className="col-sm text-center">
               
                 <Button variant="warning" onClick={handleShow}  className='request'>
                   Request Service
@@ -284,9 +284,9 @@ export default function Angular() {
           <Button variant="warning" onClick={handleClose}>
             Submit
           </Button>
-          {/* <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" onClick={handleClose}>
             Close
-          </Button> */}
+          </Button>
          
         </Modal.Footer>
         </Modal>

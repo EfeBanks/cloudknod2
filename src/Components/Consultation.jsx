@@ -29,6 +29,7 @@ export default function Consultation() {
                    <option value="3">Media</option>
                    <option value="3">Logistics</option>
                    <option value="3">Automotive</option>
+                   <option value="3">Telecom</option>
                    <option value="3">Others</option>
                </Form.Select>
                <Form.Group className="mb-4" controlId="formGroupUser" >
@@ -52,7 +53,7 @@ export default function Consultation() {
                 <textarea className="form-control borderless" id="exampleFormControlTextarea1" rows="2" placeholder='Please describe your project requirement*'></textarea>
               </div>
 
-              <Button type="submit" className='btn btn-warning btn-lg fw-bold'>Send Request</Button>
+              <Button type="submit" className='btn btn-warning fw-bold'>Send Request</Button>
                </Form>
               </div>
             </div>

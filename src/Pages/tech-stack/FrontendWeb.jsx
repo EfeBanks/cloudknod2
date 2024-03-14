@@ -170,9 +170,9 @@ export default function FrontendWeb() {
             <div className="col-sm-9 border-start border-warning development-header">
                 <h1 style={{ fontWeight:'bold'}} >Collaborate with Cloudknod to apply the latest Front-end Development technologies to carry out your software initiative.</h1>
             </div>
-            <div className="col-sm ms-4 d-flex align-items-center ">
+            <div className="col-sm text-center ">
             <Link to='/ContactForm'>
-              <button className='btn btn-warning request p-3 fw-bold'>Request Consultation</button>
+              <button className='btn btn-warning request p--sm-3 p-2'>Request Consultation</button>
             </Link>
             </div>
           </div>

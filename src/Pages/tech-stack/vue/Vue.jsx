@@ -61,7 +61,7 @@ return (
           <div className="col-sm-4">
             <img src={VueImg} alt="android development" className='img-fluid'/>
           </div>
-          <div className="col-sm-4 text">              
+          <div className="col-sm-4 text mt-sm-0 mt-3">              
             <p>We specialize in creating bespoke web applications that cater to your unique business goals, offering everything from e-commerce platforms to content management systems. We are committed to delivering web applications that not only meet but exceed your expectations. Our Vue Development Services combine creative design, innovation, and technical excellence to create powerful, scalable, and user-centric web solutions. Contact us today to discuss your project, and let's embark on a Vue-tiful journey to turn your digital vision into reality</p>
           </div>
       </div>
@@ -200,7 +200,7 @@ return (
           <div className="col-sm-9 border-start border-warning development-header">
               <h1 style={{ fontWeight:'bold'}} >Select professional IT services for your software development project.</h1>
           </div>
-          <div className="col-sm ms-5 d-flex align-items-center ">
+          <div className="col-sm text-center ">
             <Button variant="warning" onClick={handleShow}  className='request'>
               Request Service
           </Button> 

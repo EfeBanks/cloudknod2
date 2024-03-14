@@ -1,7 +1,7 @@
 .videoBg video {
     width:100%;
     margin:-10% 0 0 0;
-    min-height:100vh;
+    min-height:120vh;
     object-fit: cover;
     padding:0;    
     
@@ -14,9 +14,10 @@
 
 
 
-.hide-pic{
+.hide-show-pix{
     display: none;
 }
+
 .bg-content{
     position:absolute;
     height: 100%;
@@ -110,13 +111,15 @@
 
 
 /* Media Query */
-@media screen and (max-width:700px){
+@media screen and (max-width:800px){
     .videoBg video {
-        height:70vh;
+        display:none !important;
    
     }
-    .videoBg{
-        background-image: url(../../images/mobileBg.jpg);
+    .hide-show-pix{
+        display: block !important;
+        width:100%;
+        max-height:120vh;
     }
 
     .bg-inner-content h1{
