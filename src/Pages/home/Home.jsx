@@ -62,7 +62,7 @@ function Home() {
       {/* Banner section */}
       <div className="row">
         <div className='col videoBg'>
-            <video src={home2} autoPlay loop muted />
+            <video src={home2} autoPlay loop muted playsInline webkit-playsInline/>
             <img src={PictureBg} alt="cloudknod bg" className='hide-show-pix img-fluid'/>
             <div className="container bg-content">
               <div className="bg-inner-content mt-sm-5 mt-2 p-sm-5 p-4">
