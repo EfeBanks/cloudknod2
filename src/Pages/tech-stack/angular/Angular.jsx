@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Bg from '../../../images/bg3.jpg';
 import AngularImg2 from '../../../images/angulareactvue.jpg';
 import Appgrowth from '../../../images/appgrowth.jpg';
@@ -10,23 +10,20 @@ import C3 from '../../../images/c3.jpg';
 import C4 from '../../../images/c4.jpg';
 import C5 from '../../../images/c5.jpg';
 import C6 from '../../../images/c6.jpg';
-import { useState } from 'react';
+import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Form from 'react-bootstrap/Form';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 
 
 
-
-
 export default function Angular() {
-    const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
      // Extracts pathname property(key) from an object
   const { pathname } = useLocation();
@@ -223,78 +220,80 @@ export default function Angular() {
         {/* </section> */}
          {/* Contact us ends */}
 
-         {/* Modal Section */}
+          {/* Modal Section */}
 
         <>     
        
-        <Modal show={show} onHide={handleClose} className='modal-xl'>
-           
-            <Modal.Header closeButton>
-            <Modal.Title>
-             <h2 style={{color: '#001019', paddingLeft: '20px'}}>Request Services
-             </h2> </Modal.Title>
-            </Modal.Header>
-            <Modal.Body>  
-            <div className="container"> 
-            <div className='row'>            
-            <div className='col-sm-7'>    
-                <Form>
-                <Form.Select aria-label="Default select example">
-                    <option>Select your Service *</option>
-                    <option value="1">Finance</option>
-                    <option value="2">Healthcare</option>
-                    <option value="3">Media</option>
-                    <option value="3">Logistics</option>
-                </Form.Select>
-                <Form.Group className="mb-3" controlId="formGroupUser">
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" placeholder="Enter your name" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formGroupEmail">
-                    <Form.Label>Email address *</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formGroupPhone">
-                    <Form.Label>Phone Number *</Form.Label>
-                    <Form.Control type="text" placeholder="Phone Number" />
-                </Form.Group>
-                </Form>
-            </div>
+       <Modal show={show} onHide={handleClose} className='modal-xl'>
+          
+           <Modal.Header closeButton>
+           <Modal.Title>
+            <h2 style={{color: '#001019', paddingLeft: '20px'}}>Request Services
+            </h2> </Modal.Title>
+           </Modal.Header>
+           <Modal.Body>  
+           <div className="container"> 
+           <div className='row'>            
+           <div className='col-sm-7'>    
+               <Form>
+               <Form.Select aria-label="Default select example">
+                   <option>Select your Service *</option>
+                   <option value="1">Finance</option>
+                   <option value="2">Healthcare</option>
+                   <option value="3">Media</option>
+                   <option value="3">Logistics</option>
+               </Form.Select>
+               <Form.Group className="mb-3" controlId="formGroupUser">
+                   <Form.Label>Name</Form.Label>
+                   <Form.Control type="text" placeholder="Enter your name" />
+               </Form.Group>
+               <Form.Group className="mb-3" controlId="formGroupEmail">
+                   <Form.Label>Email address *</Form.Label>
+                   <Form.Control type="email" placeholder="Enter email" />
+               </Form.Group>
+               <Form.Group className="mb-3" controlId="formGroupPhone">
+                   <Form.Label>Phone Number *</Form.Label>
+                   <Form.Control type="text" placeholder="Phone Number" />
+               </Form.Group>
+               </Form>
+           </div>
 
-                <div className="col-sm-5 text-light" style={{backgroundColor: '#001019', padding:'30px'}}>
-                    <div className=''>
-                        <h5>Reach out to Cloudknod to receive a free consultation and entrust your IT initiative to a company of software experts.</h5>
-                    </div>
+               <div className="col-sm-5 text-light" style={{backgroundColor: '#001019', padding:'30px'}}>
+                   <div className=''>
+                       <h5>Reach out to Cloudknod to receive a free consultation and entrust your IT initiative to a company of software experts.</h5>
+                   </div>
 
-                    <div className="mbody pt-4">
-                        <h5>Contact Us</h5>
-                        Phone: +01-66677455
-                        <br />Email: info@cloudknod.com
-                    </div>
+                   <div className="mbody pt-4">
+                       <h5>Contact Us</h5>
+                       Phone: +01-66677455
+                       <br />Email: info@cloudknod.com
+                   </div>
 
-                    <div className="mfooter">
-                        
-                    </div>
-                </div>     
-            </div>
-            </div>
-                </Modal.Body> 
-  
-        <Modal.Footer className='me-auto'>
-          <Button variant="warning" onClick={handleClose}>
-            Submit
-          </Button>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-         
-        </Modal.Footer>
-        </Modal>
-       
+                   <div className="mfooter">
+                       
+                   </div>
+               </div>     
+           </div>
+           </div>
+               </Modal.Body> 
+ 
+       <Modal.Footer className='me-auto'>
+         <Button variant="warning" onClick={handleClose}>
+           Submit
+         </Button>
+         <Button variant="secondary" onClick={handleClose}>
+           Close
+         </Button>
+        
+       </Modal.Footer>
+       </Modal>
       
-    </>
-         {/* Modal Section ends */}
-    </div>
+     
+   </>
+        {/* Modal Section ends */}
+
+
+             </div>
 
   )
 }

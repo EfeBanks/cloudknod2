@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form';
+import emailjs from '@emailjs/browser';
+
 
 export default function Consultation() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: 'YOUR_PUBLIC_KEY',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <div>
   {/* Consultation section*/}
@@ -21,7 +42,7 @@ export default function Consultation() {
              
 
               <div className="col-sm-7 formBg">
-              <Form className='mx-4 px-sm-3 py-4'>
+              <Form className='mx-4 px-sm-3 py-4'  ref={form} onSubmit={sendEmail}>
               <Form.Label>Select your service</Form.Label>
                <Form.Select aria-label="Default select example" className='borderless mb-4 mt-2'>
                    <option value="1">Finance</option>
@@ -32,16 +53,16 @@ export default function Consultation() {
                    <option value="3">Telecom</option>
                    <option value="3">Others</option>
                </Form.Select>
-               <Form.Group className="mb-4" controlId="formGroupUser" >
-                   <Form.Control type="text" placeholder="Name" className='borderless' />
+               <Form.Group className="mb-4 borderless" controlId="formGroupUser" >
+                   <Form.Control type="text" placeholder="Name" name="user_name" />
                </Form.Group>
                <Form.Group className="mb-4" controlId="formGroupEmail">
                   
-                   <Form.Control type="email" placeholder="Corporate Email *" className='borderless' />
+                   <Form.Control type="email" placeholder="Corporate Email *" className='borderless' name="user_email" />
                </Form.Group>
                <Form.Group className="mb-4" controlId="formGroupPhone">
                    
-                   <Form.Control type="text" placeholder="Phone *"  className='borderless'/>
+                   <Form.Control type="text" placeholder="Phone *"  className='borderless' name="user_phone"/>
                </Form.Group>
 
               <div className='mb-4'>
@@ -50,7 +71,7 @@ export default function Consultation() {
 
               <div className="mb-4 ">
                 <label for="exampleFormControlTextarea1" class="form-label">We will call you ASAP or you can schedule a call</label>
-                <textarea className="form-control borderless" id="exampleFormControlTextarea1" rows="2" placeholder='Please describe your project requirement*'></textarea>
+                <textarea className="form-control borderless" id="exampleFormControlTextarea1" rows="2" placeholder='Please describe your project requirement*' name="message"></textarea>
               </div>
 
               <Button type="submit" className='btn btn-warning fw-bold'>Send Request</Button>
