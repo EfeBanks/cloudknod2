@@ -84,11 +84,7 @@ export default function Carousel() {
             slideShadows: true
         }}
         loop={true}
-        // pagination={{
-        //     clickable:true,
-        
-        // }}
-        // slidesPerView={2}
+      
         autoplay={{
             delay: 4000,
             disableOnInteraction: false,

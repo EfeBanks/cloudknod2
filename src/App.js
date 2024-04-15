@@ -3,7 +3,6 @@ import {useState} from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-//import NavigationBar2 from './Components/navbar2/Navbar2old';
 import NavigationBar2 from './Components/navbar2/Navbar2';
 import Home from './Pages/home/Home';
 import TechStack from './Pages/tech-stack/TechStack';

@@ -27,7 +27,6 @@ import PictureBg from '../../images/mobileBg.jpg';
 
 
 function Home() {
-  // const [toggle, setToggle] = useState(false);
   const [active, setActive] = React.useState(1);
   const SetView = (active) => {
     setActive(active);
@@ -260,7 +259,6 @@ function Home() {
          <div className="row containerSpecial mx-sm-5 mx-2 show-btns">
             <div className="col">
             
-        {/* <div className={`btn btn-secondary me-2 ${active === 1 ? 'styleActive active' : 'styleActive'}`} onClick={() => SetView(1) }>Show All</div>  */}
         <div className={`btn btn-secondary me-2 div-hover ${active === 1 ? 'styleActive' : ''}`} onClick={() => SetView(1) }>Show All</div> 
         <div className={`btn btn-secondary me-2 div-hover ${active === 2 ? 'styleActive' : ''}`} onClick={()=> SetView(2)}> Frontend</div>
         <div className={`btn btn-secondary me-2 div-hover ${active === 3 ? 'styleActive' : ''}`} onClick={()=> SetView(3)}>Backend</div>

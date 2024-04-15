@@ -130,8 +130,7 @@ export default function Java() {
                 <div className="col-sm me-2 hoverlay-container shadow">
                   {/* <h2>Requirement Analysis</h2> */}
                   <img src={C1} alt="cloudknod" className='img-fluid hover-image' />
-                  {/* <div className='front-text'><h2>Requirement Analysis</h2></div> */}
-                
+                 
                   <div className="hoverlay text-center px-3">
                     <h4 className='pt-3'>Requirement Analysis</h4>
                     <p>We start every project with a thorough analysis of your specific requirements, objectives, and target audience. Understanding your unique needs is key to creating a tailored solution.</p>

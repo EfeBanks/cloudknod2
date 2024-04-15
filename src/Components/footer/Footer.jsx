@@ -3,7 +3,6 @@ import './Footer.css';
 import {BsFacebook, BsInstagram, BsTwitter, BsYoutube, BsLinkedin  } from 'react-icons/bs';
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
-//import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import {Link} from 'react-router-dom';
 
 export default function Footer() {
@@ -82,12 +81,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                    {/* To Top */}
-                {/* <div className="col-sm-6 d-flex justify-content-end"> 
-                    <a href='#' style={{color:'white'}}>
-                        <BsFillArrowUpCircleFill className='h1'/>
-                        </a>
-                </div> */}
+              
             </div>
 
             {/* second row ends */}

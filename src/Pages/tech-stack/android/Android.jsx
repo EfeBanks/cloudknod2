@@ -16,8 +16,6 @@ import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-//import { Link } from 'react-router-dom';
-
 
 
 export default function Android() {
